@@ -1,3 +1,23 @@
 @import "variables.scss";
 @import "mixins.scss";
 @import "basic-style.scss";
+
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+
+@import "blocks/page-main.scss";
+
+@import "blocks/home.scss";
+@import "blocks/about-me.scss";
+@import "blocks/work-experience.scss";
+@import "blocks/education.scss";
+@import "blocks/skills.scss";
+@import "blocks/form.scss";
+@import "blocks/contacts.scss";
+
+@import "blocks/page-footer.scss";
+
+@import "blocks/decor-elements.scss";
+@import "blocks/information-block.scss";
+@import "blocks/slider.scss";
+
