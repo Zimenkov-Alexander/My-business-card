@@ -8,7 +8,125 @@ body {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
   line-height: 27px;
-  font-weight: bold;
+  font-weight: normal;
   font-style: normal;
   color: #3e3e3e;
+}
+
+.body__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page-header {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 20%;
+  max-width: 370px;
+  min-width: 275px;
+  background-color: #353541;
+  color: white;
+}
+
+.main-nav__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: fixed;
+  width: 20%;
+  max-width: 370px;
+  min-width: 275px;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-color: #353541;
+}
+
+.main-nav__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
+  padding-left: 30px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#181e25), to(#3d5271));
+  background-image: -webkit-linear-gradient(bottom, #181e25, #3d5271);
+  background-image: -o-linear-gradient(bottom, #181e25, #3d5271);
+  background-image: linear-gradient(to top, #181e25, #3d5271);
+}
+
+.description__name {
+  font-size: 32px;
+  padding-right: 20px;
+  line-height: 36px;
+  padding-bottom: 10px;
+  margin: 150px 0 0 0;
+}
+
+.description__profession {
+  margin: 0 0 15px 0;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.list__item {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 15px 30px;
+  font-size: 20px;
+  height: 60px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+.list__item:hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#364963), to(#181e25));
+  background-image: -webkit-linear-gradient(bottom, #364963, #181e25);
+  background-image: -o-linear-gradient(bottom, #364963, #181e25);
+  background-image: linear-gradient(to top, #364963, #181e25);
+}
+
+.header__burger {
+  display: none;
 }
