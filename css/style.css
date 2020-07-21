@@ -75,7 +75,6 @@ a {
   min-width: 275px;
   top: 0;
   left: 0;
-  z-index: 50;
   background-color: #353541;
 }
 
@@ -127,6 +126,95 @@ a {
   background-image: linear-gradient(to top, #364963, #181e25);
 }
 
-.header__burger {
-  display: none;
+.page-main {
+  position: relative;
+}
+
+.burger {
+  position: absolute;
+  width: 55px;
+  height: 33px;
+  margin-top: 46px;
+  margin-left: 85px;
+  top: 0;
+  left: 0;
+}
+
+.burger:before,
+.burger:after {
+  content: '';
+  background-color: #fb6571;
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  left: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.burger:before {
+  top: 0;
+}
+
+.burger:after {
+  bottom: 0;
+}
+
+.burger span {
+  content: '';
+  background-color: #fb6571;
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: 42.5%;
+  left: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.burger.active {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  margin-top: 35px;
+  margin-left: 30px;
+  top: 0;
+  left: 0;
+}
+
+.burger.active::before,
+.burger.active::after {
+  content: '';
+  background-color: #fff;
+  position: fixed;
+  width: 30px;
+  height: 2px;
+  margin-top: 50px;
+  margin-left: 30px;
+  top: 0;
+  left: 0;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+  z-index: 1;
+}
+
+.burger.active:before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.burger.active:after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.burger.active span {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
 }

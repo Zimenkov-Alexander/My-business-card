@@ -9,14 +9,9 @@
 </head>
 <body>
 	<div class="body__wrapper">
-		<header class="page-header">
-			<div class="header__burger">
-				<span></span>
-			</div>
-			<nav class="main-nav main-nav--closed main-nav--opened">
-				<!-- <button class="main-nav__toggle" type="button">
-					<span>Открыть/Закрыть меню</span>
-				</button> -->
+
+		<header class="page-header visually-hidden">
+			<nav class="main-nav main-nav--closed main-nav--opened active">
 				<div class="main-nav__wrapper">
 					<div class="main-nav__description">
 						<h2 class="description__name">Alexander Zimenkov</h2>
@@ -48,6 +43,10 @@
 		<div class="page__wrapper">
 		<main class="page-main">
 			<h1 class="visually-hidden">Визиткая карточка Александра Зименкова</h1>
+			<div class="burger">
+				<!-- active -->
+				<span></span>
+			</div>
 			<section class="home">
 				<h2 class="home__name">Александр Зименков</h2>
 				<p class="home__profession">Front-end developer <span class="????">|</span> HTML-верстальщик</p>
@@ -309,5 +308,6 @@
 		</footer>
 		</div>
 	</div>
+	<script src="js/script.js"></script>
 </body>
 </html>
