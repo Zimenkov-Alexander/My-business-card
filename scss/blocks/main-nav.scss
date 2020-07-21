@@ -1,17 +1,12 @@
 .main-nav__wrapper{
 	display: flex;
 	flex-direction: column;
-
 	position: fixed;
-	width: 20%;
-	max-width: 370px;
-	min-width: 275px;
+	width: 370px;
 	top: 0;
 	left: 0;
 	background-color: #353541;
-	
 }
-
 
 .main-nav__description{
 	display: flex;

@@ -10,6 +10,11 @@ body{
 .body__wrapper{
 	display: flex;
 }
+.page__wrapper{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
 
 ul{
 	@include reset-list;
@@ -23,6 +28,12 @@ img{
 a{
 	text-decoration: none;
 	color: white;
+}
+
+.button{
+	color: white;
+	background-color: $bg-buttom-color;
+	border: none;
 }
 
 .visually-hidden:not(:focus):not(:active) {

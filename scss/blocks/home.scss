@@ -1,0 +1,57 @@
+.home{
+	display: inline-block;
+	width: 100%;
+	background-color: $font-color;
+	// background-image: url('../../img/home/1.jpg');
+	// background-position: center;
+	// background-repeat: no-repeat;
+}
+.home__wrapper{
+	display: block;
+	text-align: center;
+	width: 500px;
+	margin: 190px auto;
+	color: white;
+}
+
+.home__name{
+	position: relative;
+	font-size: 43px;
+	line-height: 50px;
+	padding-top: 10px;
+}
+.home__name::before,
+.home__name::after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	max-width: 500px;
+	height: 2px;
+	top: 0;
+	left: 0;
+	background-color: $bg-buttom-color;
+}
+.home__name::before{
+	top: 0;
+	margin-bottom: 10px;
+}
+.home__name::after{
+	margin-top: 75px;
+}
+
+.home__profession{
+	margin: 25px 0 40px;
+}
+.button--home{
+	border-radius: 10px;
+	font-size: 22px;
+	padding: 15px 44px;
+}
+
+
+// ?Тест адаптива
+// @media (max-width: 600px){
+// 	.home__wrapper{
+// 		width: 100%;
+// 	}
+// }
