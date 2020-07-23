@@ -1,12 +1,40 @@
 body{
 	box-sizing: border-box;
 	min-width: 320px;
+	height: 100%;
 	margin: 0;
 	padding: 0;
 	width: auto;
 	@include font;
 }
+ul{
+	@include reset-list;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+.button{
+	color: white;
+	background-color: $bg-buttom-color;
+	border: none;
+}
+.container{
+	padding: 0 15%;
+	margin: 0 auto;
+}
+.fullscreen__wrapper{
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	min-height: 100vh;
 
+	background-color: hsl(90, 58%, 42%);
+}
 .body__wrapper{
 	display: flex;
 }
@@ -15,27 +43,20 @@ body{
 	flex-direction: column;
 	width: 100%;
 }
-
-ul{
-	@include reset-list;
+.heading-h2{
+	position: relative;
+	font-size: 32px;
 }
-
-img{
-	max-width: 100%;
-	height: auto;
-}
-
-a{
-	text-decoration: none;
-	color: white;
-}
-
-.button{
-	color: white;
+.heading-h2--line::before{
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	margin-top: 40px;
+	width: 76px;
+	height: 2px;
 	background-color: $bg-buttom-color;
-	border: none;
 }
-
 .visually-hidden:not(:focus):not(:active) {
 	position: absolute;
 	width: 1px;

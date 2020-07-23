@@ -7,15 +7,12 @@
 	left: 0;
 	background-color: #353541;
 }
-
 .main-nav__description{
 	display: flex;
 	flex-direction: column;
 	align-content: flex-end;
 	padding-left: 30px;
 	background-image: linear-gradient(to top, hsl(215, 20%, 12%), hsl(215, 30%, 34%));
-
-	
 }
 .description__name{
 	font-size: 32px;
@@ -35,10 +32,15 @@
 	padding: 15px 30px;
 	font-size: 20px;
 	height: 60px;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 .list__item:hover{
 	background-image: linear-gradient(to top,hsl(215, 30%, 30%) ,hsl(215, 20%, 12%) );
 }
 
-
+// .list__item:nth-child(2n-1):hover{
+// 	background-image: linear-gradient(to top,hsl(215, 30%, 30%) ,hsl(215, 20%, 12%) );
+// }
+// .list__item:nth-child(2n):hover{
+// 	background-image: linear-gradient(to top, hsl(215, 20%, 12%), hsl(215, 30%, 34%));
+// }

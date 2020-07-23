@@ -1,34 +1,45 @@
 .home{
 	display: inline-block;
 	width: 100%;
+	min-height: 100vh;
 	background-color: $font-color;
-	// background-image: url('../../img/home/1.jpg');
-	// background-position: center;
-	// background-repeat: no-repeat;
+	background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5) ),url('../../img/home/1.jpg');
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .home__wrapper{
-	display: block;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100vh;
 	text-align: center;
-	width: 500px;
-	margin: 190px auto;
+	max-width: 1000px;
+	margin: 0 auto;
+	margin-top: -100px;
 	color: white;
 }
-
 .home__name{
+	display: inline-block;
 	position: relative;
-	font-size: 43px;
-	line-height: 50px;
-	padding-top: 10px;
+	font-size: 50px;
+	padding-top: 25px;
+	margin: 0 auto;
+	margin-bottom: 25px;
+	width: 100%;
 }
 .home__name::before,
 .home__name::after{
 	content: "";
 	position: absolute;
 	width: 100%;
-	max-width: 500px;
+	max-width: 60%;
+	text-align: center;
 	height: 2px;
 	top: 0;
-	left: 0;
+	left: 50%;
+	margin-left: -30%;
 	background-color: $bg-buttom-color;
 }
 .home__name::before{
@@ -36,18 +47,18 @@
 	margin-bottom: 10px;
 }
 .home__name::after{
-	margin-top: 75px;
+	margin-top: 80px;
 }
-
 .home__profession{
-	margin: 25px 0 40px;
+	font-size: 20px;
+	margin-bottom: 45px;
 }
 .button--home{
+	align-self: center;
 	border-radius: 10px;
 	font-size: 22px;
 	padding: 15px 44px;
 }
-
 
 // ?Тест адаптива
 // @media (max-width: 600px){
