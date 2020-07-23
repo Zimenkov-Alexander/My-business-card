@@ -376,20 +376,21 @@ a {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 33.3%;
-  padding-right: 20px;
+  padding-right: 50px;
   padding-bottom: 56px;
 }
 
-.skills__name {
+.slider__name {
   padding: 12px 0;
+  white-space: nowrap;
 }
 
-.skills__level {
+.slider__level {
   position: relative;
   width: 90%;
 }
 
-.skills__level::before {
+.slider__level::before {
   position: absolute;
   content: "";
   top: 0;
@@ -399,34 +400,99 @@ a {
   background-color: #b3b3b3;
 }
 
-.skills__level::after {
+.slider__level::after {
   position: absolute;
   content: "";
   top: 0;
   left: 0;
-  width: 80%;
+  width: 90%;
   height: 5px;
   background-color: #fb6470;
 }
 
-.slider__circle {
+.slider__percent {
   position: absolute;
-  content: "";
-  top: 0;
-  left: 80%;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  margin-top: -8px;
-  margin-left: -8px;
-  background-color: #fb6470;
+  top: -14px;
+  right: -45px;
 }
 
-.slider__circle::after {
+.slider__percent::after {
   position: absolute;
   content: "90%";
   top: 0;
   right: 0;
+}
+
+.skills__html.slider__level::after {
+  width: 90%;
+}
+
+.skills__css.slider__level::after {
+  width: 90%;
+}
+
+.skills__scss.slider__level::after {
+  width: 70%;
+}
+
+.skills__javascript.slider__level::after {
+  width: 50%;
+}
+
+.skills__react.slider__level::after {
+  width: 5%;
+}
+
+.skills__photoshop.slider__level::after {
+  width: 100%;
+}
+
+.skills__jira.slider__level::after {
+  width: 90%;
+}
+
+.skills__github.slider__level::after {
+  width: 80%;
+}
+
+.skills__testing.slider__level::after {
+  width: 95%;
+}
+
+.skills__html .slider__percent::after {
+  content: "90%";
+}
+
+.skills__css .slider__percent::after {
+  content: "90%";
+}
+
+.skills__scss .slider__percent::after {
+  content: "70%";
+}
+
+.skills__javascript .slider__percent::after {
+  content: "50%";
+}
+
+.skills__react .slider__percent::after {
+  content: "5%";
+}
+
+.skills__photoshop .slider__percent::after {
+  content: "100%";
+}
+
+.skills__jira .slider__percent::after {
+  content: "90%";
+}
+
+.skills__github .slider__percent::after {
+  content: "80%";
+}
+
+.skills__testing .slider__percent::after {
+  content: "95%";
 }
 
 .burger {
