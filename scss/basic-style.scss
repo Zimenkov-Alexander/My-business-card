@@ -32,8 +32,6 @@ a{
 	flex-direction: column;
 	flex-grow: 1;
 	min-height: 100vh;
-
-	background-color: hsl(90, 58%, 42%);
 }
 .body__wrapper{
 	display: flex;
@@ -56,6 +54,14 @@ a{
 	width: 76px;
 	height: 2px;
 	background-color: $bg-buttom-color;
+}
+.elements__wrapper{
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	flex-wrap: wrap;
+	// justify-content: space-around;
+	margin-top: 45px;
 }
 .visually-hidden:not(:focus):not(:active) {
 	position: absolute;

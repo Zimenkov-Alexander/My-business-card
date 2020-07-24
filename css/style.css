@@ -53,7 +53,6 @@ a {
   -ms-flex-positive: 1;
   flex-grow: 1;
   min-height: 100vh;
-  background-color: #6ba92d;
 }
 
 .body__wrapper {
@@ -87,6 +86,22 @@ a {
   width: 76px;
   height: 2px;
   background-color: #fb6470;
+}
+
+.elements__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 45px;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -186,7 +201,6 @@ a {
 .home {
   display: inline-block;
   width: 100%;
-  min-height: 100vh;
   background-color: #353541;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.5))), url("../../img/home/1.jpg");
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url("../../img/home/1.jpg");
@@ -495,6 +509,16 @@ a {
   content: "95%";
 }
 
+.work-experience {
+  position: relative;
+  padding-top: 25px;
+}
+
+.education {
+  position: relative;
+  padding-top: 50px;
+}
+
 .burger {
   position: fixed;
   width: 55px;
@@ -582,4 +606,62 @@ a {
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0);
+}
+
+.information-block {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 48%;
+  margin: 0 auto;
+  padding: 20px;
+  color: white;
+  border-radius: 15px;
+  background-color: #1d1d24;
+}
+
+.information-block:nth-child(2n-1) {
+  margin-right: 0;
+}
+
+.information-block:nth-child(2n) {
+  margin-top: -70px;
+  margin-bottom: 70px;
+  margin-left: 0;
+}
+
+.info-post {
+  display: inline-block;
+  font-size: 20px;
+  padding-right: 20px;
+  margin: 0;
+}
+
+.info-place {
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.info-time {
+  padding-top: 5px;
+  margin: 0;
+  color: #fb6470;
+}
+
+.info-description {
+  padding-top: 20px;
+  margin: 0;
+}
+
+.information-block:hover {
+  width: 50%;
+  -webkit-transition: all 2s ease 0s;
+  -o-transition: all 2s ease 0s;
+  transition: all 2s ease 0s;
+}
+
+.information-block:hover .info-post {
+  font-size: 25px;
 }

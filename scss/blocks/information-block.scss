@@ -1,0 +1,113 @@
+.information-block{
+	position: relative;
+	box-sizing: border-box;
+	width: 48%;
+	// max-width: 48%;
+	// min-width: 48%;
+	margin: 0 auto;
+	padding: 20px;
+	color: white;
+	border-radius: 15px;
+	background-color: $bg-dark-color;
+}
+
+.information-block:nth-child(2n-1){
+	margin-right: 0;
+}
+.information-block:nth-child(2n){
+	margin-top: -70px;
+	margin-bottom: 70px;
+	margin-left: 0;
+}
+.info-post{
+	display: inline-block;
+	font-size: 20px;
+	padding-right: 20px;
+	margin: 0;
+}
+.info-place{
+	white-space: nowrap;
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 18px;
+	font-weight: 500;
+}
+.info-time{
+	padding-top: 5px;
+	margin: 0;
+	color: $bg-buttom-color;
+}
+.info-description{
+	padding-top: 20px;
+	margin: 0;
+}
+
+
+.information-block:hover{
+	width: 50%;
+	transition: all 2s ease 0s;
+	& .info-post{
+		font-size: 25px;
+	}
+}
+
+// .information-block--right:before{
+// 	position: absolute;
+// 	content: "";
+// 	top: 0;
+// 	left: 0;
+// 	margin-top: 20%;
+// 	margin-left: -15%;
+// 	width: 20%;
+// 	height: 5px;
+// 	background-color: $bg-dark-color;
+// 	z-index: 0;
+// 	transform: rotate(-45deg) ;
+// }
+
+
+
+// .information-block--left:before{
+// 	position: absolute;
+// 	content: "";
+// 	bottom: 0;
+// 	left: 0;
+// 	margin-bottom: 1.8%;
+// 	margin-left: 25%;
+// 	width: 100%;
+// 	height: 5px;
+// 	background-color: $bg-dark-color;
+// }
+
+
+
+
+
+
+// .information-block--left:before{
+// 	content: "";
+// 	position: absolute;
+// 	box-sizing: border-box;
+// 	bottom: 0;
+// 	right: 0;
+// 	margin-bottom: 2%;
+// 	margin-right: -184px;
+// 	width: 32px;
+// 	height: 32px;
+// 	border:2px solid black;
+// 	border-radius: 50%;
+// 	background-color: white;
+// }
+// .information-block--right:before{
+// 	content: "";
+// 	position: absolute;
+// 	box-sizing: border-box;
+// 	bottom: 0;
+// 	left: 0;
+// 	margin-bottom: 2%;
+// 	margin-left: -184px;
+// 	width: 32px;
+// 	height: 32px;
+// 	border:2px solid black;
+// 	border-radius: 50%;
+// 	background-color: white;
+// }
