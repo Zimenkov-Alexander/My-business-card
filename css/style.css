@@ -405,7 +405,7 @@ a {
   content: "";
   top: 0;
   left: 0;
-  width: 90%;
+  width: 70%;
   height: 5px;
   background-color: #fb6470;
 }
@@ -424,23 +424,23 @@ a {
 }
 
 .skills__html.slider__level::after {
-  width: 90%;
-}
-
-.skills__css.slider__level::after {
-  width: 90%;
-}
-
-.skills__scss.slider__level::after {
   width: 70%;
 }
 
+.skills__css.slider__level::after {
+  width: 60%;
+}
+
+.skills__scss.slider__level::after {
+  width: 45%;
+}
+
 .skills__javascript.slider__level::after {
-  width: 50%;
+  width: 25%;
 }
 
 .skills__react.slider__level::after {
-  width: 5%;
+  width: 0%;
 }
 
 .skills__photoshop.slider__level::after {
@@ -448,11 +448,11 @@ a {
 }
 
 .skills__jira.slider__level::after {
-  width: 90%;
+  width: 85%;
 }
 
 .skills__github.slider__level::after {
-  width: 80%;
+  width: 75%;
 }
 
 .skills__testing.slider__level::after {
@@ -460,23 +460,23 @@ a {
 }
 
 .skills__html .slider__percent::after {
-  content: "90%";
-}
-
-.skills__css .slider__percent::after {
-  content: "90%";
-}
-
-.skills__scss .slider__percent::after {
   content: "70%";
 }
 
+.skills__css .slider__percent::after {
+  content: "60%";
+}
+
+.skills__scss .slider__percent::after {
+  content: "45%";
+}
+
 .skills__javascript .slider__percent::after {
-  content: "50%";
+  content: "25%";
 }
 
 .skills__react .slider__percent::after {
-  content: "5%";
+  content: "0%";
 }
 
 .skills__photoshop .slider__percent::after {
@@ -484,11 +484,11 @@ a {
 }
 
 .skills__jira .slider__percent::after {
-  content: "90%";
+  content: "85%";
 }
 
 .skills__github .slider__percent::after {
-  content: "80%";
+  content: "75%";
 }
 
 .skills__testing .slider__percent::after {
@@ -507,7 +507,7 @@ a {
 
 .burger:before,
 .burger:after {
-  content: '';
+  content: "";
   background-color: #fb6571;
   position: absolute;
   width: 100%;
@@ -527,7 +527,7 @@ a {
 }
 
 .burger span {
-  content: '';
+  content: "";
   background-color: #fb6571;
   position: absolute;
   width: 100%;
@@ -551,7 +551,7 @@ a {
 
 .burger.active::before,
 .burger.active::after {
-  content: '';
+  content: "";
   background-color: #fff;
   position: fixed;
   width: 30px;
