@@ -340,7 +340,7 @@ a {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  margin-top: 5%;
+  margin-top: 25px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -527,6 +527,7 @@ a {
   margin-left: 85px;
   top: 0;
   left: 0;
+  z-index: 99;
 }
 
 .burger:before,
@@ -647,12 +648,12 @@ a {
 .information-block::before {
   position: absolute;
   content: "";
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   bottom: 0;
   left: 50%;
-  margin-left: -10px;
-  margin-bottom: -20px;
+  margin-left: -8px;
+  margin-bottom: -18px;
   background-image: url(../../img/information-block/arrow-dark.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -660,6 +661,10 @@ a {
 }
 
 .information-block:hover:before {
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+  margin-bottom: -20px;
   background-image: url(../../img/information-block/arrow-red.svg);
 }
 

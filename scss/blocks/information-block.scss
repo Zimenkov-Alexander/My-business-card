@@ -31,12 +31,12 @@
 .information-block::before{
 	position: absolute;
 	content: "";
-	width: 20px;
-	height: 20px;
+	width: 16px;
+	height: 16px;
 	bottom: 0;
 	left: 50%;
-	margin-left: -10px;
-	margin-bottom: -20px;
+	margin-left: -8px;
+	margin-bottom: -18px;
 	// background-color: $bg-dark-color;
 	background-image: url(../../img/information-block/arrow-dark.svg);
 	background-position: center;
@@ -44,6 +44,10 @@
 	background-size: cover;
 }
 .information-block:hover:before{
+	width: 20px;
+	height: 20px;
+	margin-left: -10px;
+	margin-bottom: -20px;
 	background-image: url(../../img/information-block/arrow-red.svg);
 }
 .information-block:last-child::before{
