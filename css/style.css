@@ -169,67 +169,6 @@ a {
   width: 100%;
 }
 
-.about-me {
-  -webkit-box-flex: 2;
-  -ms-flex-positive: 2;
-  flex-grow: 2;
-  background-color: #f9f9f9;
-  padding-bottom: 50px;
-}
-
-.about-me__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  padding-top: 25px;
-}
-
-.about-me__item:nth-child(1) {
-  max-width: 65%;
-}
-
-.about-me__image {
-  margin-left: 50px;
-}
-
-.about-me__image img {
-  padding-top: 25px;
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: center;
-  object-position: center;
-}
-
-.about-me__description {
-  margin: 40px 0 50px;
-}
-
-.about-me__table {
-  display: inline-block;
-  border-collapse: collapse;
-  color: #545454;
-}
-
-.about-me__table a {
-  color: #545454;
-}
-
-.info__name, .info__value {
-  border-bottom: 1px solid #f2f2f2;
-  padding: 10px;
-  background-color: white;
-}
-
-.info__name {
-  font-weight: 600;
-}
-
-.info__value {
-  padding-right: 50px;
-}
-
 .home {
   display: inline-block;
   width: 100%;
@@ -311,6 +250,67 @@ a {
   padding: 15px 44px;
 }
 
+.about-me {
+  -webkit-box-flex: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  background-color: #f9f9f9;
+  padding-bottom: 50px;
+}
+
+.about-me__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding-top: 25px;
+}
+
+.about-me__item:nth-child(1) {
+  max-width: 65%;
+}
+
+.about-me__image {
+  margin-left: 50px;
+}
+
+.about-me__image img {
+  padding-top: 25px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
+.about-me__description {
+  margin: 40px 0 50px;
+}
+
+.about-me__table {
+  display: inline-block;
+  border-collapse: collapse;
+  color: #545454;
+}
+
+.about-me__table a {
+  color: #545454;
+}
+
+.info__name, .info__value {
+  border-bottom: 1px solid #f2f2f2;
+  padding: 10px;
+  background-color: white;
+}
+
+.info__name {
+  font-weight: 600;
+}
+
+.info__value {
+  padding-right: 50px;
+}
+
 .skills {
   background-color: #1d1d24;
   color: white;
@@ -329,6 +329,7 @@ a {
   -ms-flex-direction: column;
   flex-direction: column;
   padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .skills__item__wrapper {
