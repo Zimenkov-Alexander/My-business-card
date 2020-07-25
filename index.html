@@ -45,18 +45,17 @@
 			<div class="burger">
 				<span></span>
 			</div>
-			<section class="home fullscreen__wrapper">
+			<section class="home">
 				<div class="home__wrapper">
 					<h2 class="home__name">Александр Зименков</h2>
 					<p class="home__profession">Front-end developer <span class="????">|</span> HTML-верстальщик</p>
 					<button class="button button--home">Contact Me</button>
 				</div>
 			</section>
-			<div class="fullscreen__wrapper ">
-				<section class="about-me ">
+				<section class="about-me">
 					<div class="about-me__wrapper container">
-						<div class="about-me__info about-me__item">
-							<h2 class="about-me__heading heading-h2 heading-h2--line">About Me</h2>
+						<div class="about-me__item">
+							<h2 class="heading-h2 heading-h2--line">About Me</h2>
 							<p class="about-me__description">
 								Lorem ipsum dolor sit amet, ectetuer nonummy nibh euismod tincidunt ut laoreet  magna  laoreet  aliquam erat volutpat.
 								Lorem ipsum dolor sit amet, ectetuer nonummy nibh euismod tincidunt ut laoreet  magna  laoreet  aliquam erat volutpat.
@@ -192,28 +191,26 @@
 						</div>
 					</div>
 				</section>	
-			</div>
-
-			<div class="fullscreen__wrapper container">
+			<div class="container">
 				<section class="work-experience">
-					<h2 class="work-experience__heading heading-h2 heading-h2--line">Work Experience</h2>
-					<div class="work-experience__wrapper elements__wrapper">
-						<div class="work-experience-info information-block information-block--right">
+					<h2 class="heading-h2 heading-h2--line">Work Experience</h2>
+					<div class="experience__wrapper">
+						<div class="information-block">
 							<h4 class="info-post">Должнос </h4><span class="info-place">@Место работы</span>
 							<p class="info-time">Время работы</p>
 							<p class="info-description">Описание работы</p>
 						</div>
-						<div class="work-experience-info information-block information-block--left">
+						<div class="information-block">
 							<h4 class="info-post">Должнос </h4><span class="info-place">@Место работы</span>
 							<p class="info-time">Время работы</p>
 							<p class="info-description">Описание работы</p>
 						</div>
-						<div class="work-experience-info information-block information-block--right">
+						<div class="information-block">
 							<h4 class="info-post">Должнос </h4><span class="info-place">@Место работы</span>
 							<p class="info-time">Время работы</p>
 							<p class="info-description">Описание работы</p>
 						</div>
-						<div class="work-experience-info information-block information-block--left">
+						<div class="information-block">
 							<h4 class="info-post">Должнос </h4><span class="info-place">@Место работы</span>
 							<p class="info-time">Время работы</p>
 							<p class="info-description">Описание работы</p>
@@ -222,44 +219,37 @@
 
 				</section>
 				<section class="education">
-					<h2 class="education__heading heading-h2 heading-h2--line">Education</h2>
-					<div class="education__wrapper elements__wrapper">
-						<div class="education-info information-block information-block--right">
+					<h2 class="heading-h2 heading-h2--line">Education</h2>
+					<div class="experience__wrapper">
+						<div class="information-block">
 							<h4 class="info-post">Напавление </h4><span class="info-place">@Место обучения</span>
 							<p class="info-time">Время обучения</p>
 							<p class="info-description">Описание работы</p>
 						</div>
-						<div class="education-info information-block information-block--left">
+						<div class="information-block">
 							<h4 class="info-post">Напавление </h4><span class="info-place">@Место обучения</span>
 							<p class="info-time">Время обучения</p>
 							<p class="info-description">Описание работы</p>
 						</div>
-						<div class="education-info information-block information-block--right">
+						<div class="information-block">
 							<h4 class="info-post">Напавление </h4><span class="info-place">@Место обучения</span>
 							<p class="info-time">Время обучения</p>
 							<p class="info-description">Описание работы</p>
 						</div>
-						<div class="education-info information-block information-block--left">
+						<div class="information-block">
 							<h4 class="info-post">Напавление </h4><span class="info-place">@Место обучения</span>
 							<p class="info-time">Время обучения</p>
 							<p class="info-description">Описание работы</p>
 						</div>
-					</div>
-					<div class="decor-elements">
-						<span class="decor-elements__item"></span>
-						<span class="decor-elements__item"></span>
-						<span class="decor-elements__item"></span>
-						<span class="decor-elements__item"></span>
 					</div>
 				</section>
 			</div>
-
 			<section class="form">
 				<h2 class="visually-hidden">Форма для связи</h2>
 				<h3 class="form__heading">Leave a Message</h3>
 				<div class="form__wrapper">
-					<div class="form-info">
-						<form class="message-user" action="https://echo.htmlacademy.ru" method="POST">
+					<form class="message-user" action="https://echo.htmlacademy.ru" method="POST">
+						<div class="form-info">
 							<p class="form-item">
 								<label for="appointment-name" class="visually-hidden">Name</label>
 								<input id="appointment-name" type="text" name="name" value="name">
@@ -274,10 +264,10 @@
 							</p>
 						</div>
 						<div class="form-message">
-						<p class="form-item">
-							<label for="appointment-message" class="visually-hidden">Message</label>
-							<input id="appointment-message" type="text" name="message" value="Форма пока не работает">
-						</p>
+							<p class="form-item">
+								<label for="appointment-message" class="visually-hidden">Message</label>
+								<input id="appointment-message" type="text" name="message" value="Форма пока не работает">
+							</p>
 						</div>
 						<input class="button button--form" type="submit" value="Hire Me!">
 					</form>
