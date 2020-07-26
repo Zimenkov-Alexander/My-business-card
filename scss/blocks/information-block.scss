@@ -45,17 +45,17 @@
 	left: 50%;
 	margin-left: -8px;
 	margin-bottom: -18px;
-	// background-color: $bg-dark-color;
 	background-image: url(../../img/information-block/arrow-dark.svg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	transition: all 1s ease 0s;
 }
 .information-block:hover:before{
-	width: 20px;
-	height: 20px;
-	margin-left: -10px;
-	margin-bottom: -20px;
+	width: 18px;
+	height: 18px;
+	margin-left: -8px;
+	margin-bottom: -18px;
 	background-image: url(../../img/information-block/arrow-red.svg);
 }
 .information-block:last-child::before{
@@ -74,6 +74,7 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	transition: all 0.5s ease 0s;
 }
 .info-title.active::after{
 	content: "";

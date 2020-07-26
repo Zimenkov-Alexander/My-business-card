@@ -37,6 +37,12 @@ a{
 	flex-direction: column;
 	width: 100%;
 }
+.flex-wrapper{
+	box-sizing: border-box;
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+}
 .heading-h2{
 	position: relative;
 	font-size: 32px;
@@ -50,6 +56,17 @@ a{
 	margin-top: 40px;
 	width: 76px;
 	height: 2px;
+	background-color: $bg-buttom-color;
+}
+.decor::before{
+	position: absolute;
+	content: "";
+	width: 4px;
+	height: 50%;
+	top: 0;
+	left: 100;
+	margin-left: -2px;
+	margin-top: 175px;
 	background-color: $bg-buttom-color;
 }
 .visually-hidden:not(:focus):not(:active) {

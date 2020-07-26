@@ -191,7 +191,7 @@
 						</div>
 					</div>
 			</section>	
-			<div class="page-experience-wrapper container">
+			<div class="flex-wrapper container">
 				<section class="work-experience">
 					<h2 class="heading-h2 heading-h2--line">Work Experience</h2>
 					<div class="experience__wrapper">
@@ -236,7 +236,7 @@
 				<span class="decor"></span>
 				<section class="education">
 					<h2 class="heading-h2 heading-h2--line">Education</h2>
-					<div class="experience__wrapper">
+					<div class="experience__wrapper one">
 						<div class="information-block">
 							<div class="info-title">
 								<h4 class="info-post">Напавление </h4><span class="info-place">@Место обучения</span>
@@ -276,63 +276,65 @@
 					</div>
 				</section>
 			</div>
-			<section class="form">
-				<h2 class="visually-hidden">Форма для связи</h2>
-				<h3 class="form__heading">Leave a Message</h3>
-				<div class="form__wrapper">
-					<form class="message-user" action="https://echo.htmlacademy.ru" method="POST">
-						<div class="form-info">
-							<p class="form-item">
-								<label for="appointment-name" class="visually-hidden">Name</label>
-								<input id="appointment-name" type="text" name="name" value="name">
-							</p>
-							<p class="form-item">
-								<label for="appointment-email" class="visually-hidden">Email</label>
-								<input id="appointment-email" type="text" name="email" value="email">
-							</p>
-							<p class="form-item">
-								<label for="appointment-subject" class="visually-hidden">Subject</label>
-								<input id="appointment-subject" type="text" name="subject" value="subject (Тема)">
-							</p>
+			<div class="flex-wrapper container">
+				<section class="form">
+					<h2 class="visually-hidden">Форма для связи</h2>
+					<h3 class="form__heading">Leave a Message</h3>
+					<div class="form__wrapper">
+						<form class="message-user" action="https://echo.htmlacademy.ru" method="POST">
+							<div class="form-info">
+								<p class="form-item">
+									<label for="appointment-name" class="visually-hidden">Name</label>
+									<input id="appointment-name" type="text" name="name" placeholder="name">
+								</p>
+								<p class="form-item">
+									<label for="appointment-email" class="visually-hidden">Email</label>
+									<input id="appointment-email" type="text" name="email" placeholder="email">
+								</p>
+								<p class="form-item">
+									<label for="appointment-subject" class="visually-hidden">Subject</label>
+									<input id="appointment-subject" type="text" name="subject" placeholder="subject (Тема)">
+								</p>
+							</div>
+							<div class="form-message">
+								<p class="form-item">
+									<label for="appointment-message" class="visually-hidden">Message</label>
+									<textarea name="" type="text" name="message" id="appointment-message" placeholder="Форма пока не работает" rows="auto"></textarea>
+								</p>
+								<input class="button button--form" type="submit" value="Hire Me!">
+							</div>
+						</form>
+					</div>
+				</section>
+				<section class="contacts">
+					<h2 class="visually-hidden">Контакты</h2>
+					<div class="contacts__wrapper">
+						<div class="contacts__item">
+							<img class="item__img" src="img/contacts/Home.svg" alt="Иконка дом">
+							<div class="item__wrapper">
+								<p class="item__name">Location</p>
+								<span class="item__info">324, Golden Tower, Amborkhana, Sylhet</span>
+							</div>
 						</div>
-						<div class="form-message">
-							<p class="form-item">
-								<label for="appointment-message" class="visually-hidden">Message</label>
-								<input id="appointment-message" type="text" name="message" value="Форма пока не работает">
-							</p>
+						<div class="contacts__item">
+							<img class="item__img" src="img/contacts/Mail.svg" alt="Иконка емейл">
+							<div class="item__wrapper">
+								<p class="item__name">Email</p>
+								<span class="item__info">junaed@deviserweb.com</span>
+							</div>
 						</div>
-						<input class="button button--form" type="submit" value="Hire Me!">
-					</form>
-				</div>
-			</section>
-			<section class="contacts">
-				<h2 class="visually-hidden">Контакты</h2>
-				<div class="contacts__wrapper">
-					<div class="contacts__item">
-						<img class="item__img" src="img/contacts/Home.svg" alt="Иконка дом">
-						<div class="item__wrapper">
-							<p class="item__name">Location</p>
-							<span class="item__info">324, Golden Tower, Amborkhana, Sylhet</span>
+						<div class="contacts__item">
+							<img class="item__img" src="img/contacts/Phone.svg" alt="Иконка Телефон">
+							<div class="item__wrapper">
+								<p class="item__name">Toll Free Call</p>
+								<span class="item__info">0800 234 6578 </span>
+							</div>
 						</div>
 					</div>
-					<div class="contacts__item">
-						<img class="item__img" src="img/contacts/Mail.svg" alt="Иконка емейл">
-						<div class="item__wrapper">
-							<p class="item__name">Email</p>
-							<span class="item__info">junaed@deviserweb.com</span>
-						</div>
-					</div>
-					<div class="contacts__item">
-						<img class="item__img" src="img/contacts/Phone.svg" alt="Иконка Телефон">
-						<div class="item__wrapper">
-							<p class="item__name">Toll Free Call</p>
-							<span class="item__info">0800 234 6578 </span>
-						</div>
-					</div>
-				</div>
-			</section>
+				</section>
+			</div>
 		</main>
-		<footer class="page-footer">
+		<footer class="page-footer container">
 			<div class="page-footer__wrapper">
 				<ul class="social-networks">
 					<li class="social-networks-list"><a href="#">Instagram</a></li>

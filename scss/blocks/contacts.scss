@@ -1,0 +1,35 @@
+.contacts{
+	width: 50%;
+	// margin-top: 50px;
+}
+.contacts__wrapper{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-top: 8px;
+}
+.contacts__item{
+	display: flex;	
+	margin-top: 30px;
+}
+.item__img{
+	width: 32px;
+	height: 32px;
+	margin-top: 15px;
+	margin-right: 45px;
+}
+.item__wrapper{
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	
+}
+.item__name{
+	font-size: 20px;
+	margin: 0
+}
+.item__info{
+	margin-top: 5px;
+	font-size: 16px;
+
+}

@@ -58,6 +58,17 @@ a {
   width: 100%;
 }
 
+.flex-wrapper {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
 .heading-h2 {
   position: relative;
   font-size: 32px;
@@ -72,6 +83,18 @@ a {
   margin-top: 40px;
   width: 76px;
   height: 2px;
+  background-color: #fb6470;
+}
+
+.decor::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 50%;
+  top: 0;
+  left: 100;
+  margin-left: -2px;
+  margin-top: 175px;
   background-color: #fb6470;
 }
 
@@ -472,15 +495,131 @@ a {
   content: "95%";
 }
 
-.page-experience-wrapper {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  position: relative;
+.flex-wrapper:nth-child(2n-1) {
+  margin-top: 50px;
+}
+
+.form {
+  margin-right: 10%;
+  width: 50%;
+  padding-top: 35px;
+}
+
+.form__heading {
+  font-size: 22px;
+  margin: 0;
+  margin-bottom: 20px;
+  color: #3e3e3e;
+}
+
+.message-user {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  height: 150px;
+}
+
+.form-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 50%;
+  margin-right: 20px;
+}
+
+.form-item {
+  margin: 0;
+  padding: 0;
+}
+
+.form-item input {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 35px;
+}
+
+.form-message {
+  position: relative;
+  width: 50%;
+}
+
+.form-message textarea {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  resize: none;
+  height: 150px;
+}
+
+.button--form {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  width: 95px;
+  height: 35px;
+  font-size: 16px;
+  bottom: 0;
+  right: 0;
+  margin-bottom: -50px;
+}
+
+.contacts {
+  width: 50%;
+}
+
+.contacts__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.contacts__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+}
+
+.item__img {
+  width: 32px;
+  height: 32px;
+  margin-top: 15px;
+  margin-right: 45px;
+}
+
+.item__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.item__name {
+  font-size: 20px;
+  margin: 0;
+}
+
+.item__info {
+  margin-top: 5px;
+  font-size: 16px;
 }
 
 .experience__wrapper {
@@ -495,8 +634,6 @@ a {
 }
 
 .work-experience {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   position: relative;
   padding-top: 25px;
   margin-right: 5%;
@@ -508,18 +645,6 @@ a {
   padding-top: 25px;
   width: 50%;
   margin-left: 5%;
-}
-
-.decor::before {
-  position: absolute;
-  content: "";
-  width: 4px;
-  height: 50%;
-  top: 0;
-  left: 100;
-  margin-left: -2px;
-  margin-top: 175px;
-  background-color: #fb6470;
 }
 
 .burger {
@@ -670,13 +795,16 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-transition: all 1s ease 0s;
+  -o-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
 }
 
 .information-block:hover:before {
-  width: 20px;
-  height: 20px;
-  margin-left: -10px;
-  margin-bottom: -20px;
+  width: 18px;
+  height: 18px;
+  margin-left: -8px;
+  margin-bottom: -18px;
   background-image: url(../../img/information-block/arrow-red.svg);
 }
 
@@ -696,6 +824,9 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
 .info-title.active::after {
