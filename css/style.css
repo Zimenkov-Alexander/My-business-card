@@ -262,13 +262,15 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding-top: 25px;
 }
 
 .about-me__item:nth-child(1) {
-  max-width: 65%;
+  max-width: 55%;
+  text-align: start;
 }
 
 .about-me__image {
@@ -512,11 +514,11 @@ a {
   position: absolute;
   content: "";
   width: 4px;
-  height: 500px;
+  height: 50%;
   top: 0;
   left: 100;
   margin-left: -2px;
-  margin-top: 200px;
+  margin-top: 175px;
   background-color: #fb6470;
 }
 
@@ -621,6 +623,11 @@ a {
   background-color: #1d1d24;
 }
 
+.info-title {
+  position: relative;
+  cursor: pointer;
+}
+
 .info-post {
   display: inline-block;
   font-size: 20px;
@@ -644,6 +651,10 @@ a {
 .info-description {
   padding-top: 20px;
   margin: 0;
+}
+
+.info-wrapper {
+  display: none;
 }
 
 .information-block::before {
@@ -671,4 +682,34 @@ a {
 
 .information-block:last-child::before {
   content: none;
+}
+
+.info-title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  margin-top: 8px;
+  background-image: url(../../img/information-block/arrow2-white.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.info-title.active::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  background-image: url(../../img/information-block/arrow2-white.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }

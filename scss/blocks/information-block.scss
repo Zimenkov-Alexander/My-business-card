@@ -7,6 +7,10 @@
 	border-radius: 15px;
 	background-color: $bg-dark-color;
 }
+.info-title{
+	position: relative;
+	cursor: pointer;
+}
 .info-post{
 	display: inline-block;
 	font-size: 20px;
@@ -28,6 +32,10 @@
 	padding-top: 20px;
 	margin: 0;
 }
+.info-wrapper{
+	display: none;
+}
+
 .information-block::before{
 	position: absolute;
 	content: "";
@@ -52,4 +60,32 @@
 }
 .information-block:last-child::before{
 	content: none;
+}
+
+.info-title::after{
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 16px;
+	height: 16px;
+	margin-top: 8px;
+	background-image: url(../../img/information-block/arrow2-white.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.info-title.active::after{
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 16px;
+	height: 16px;
+	// margin-right: -30px;
+	background-image: url(../../img/information-block/arrow2-white.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transform: rotate(180deg);
 }
