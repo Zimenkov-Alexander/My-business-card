@@ -290,7 +290,6 @@ a {
 
 .button--home:focus {
   outline: none;
-  border: none;
 }
 
 .button--home .button__item {
@@ -322,7 +321,6 @@ a {
 
 .button--active:focus {
   outline: none;
-  border: none;
 }
 
 .button--active .button--home__name {
@@ -408,6 +406,12 @@ a {
 
 .about-me__table a {
   color: #545454;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(251, 100, 112, 0.5);
+}
+
+.about-me__table a:hover {
+  color: #fb6470;
 }
 
 .info__name, .info__value {
@@ -506,7 +510,7 @@ a {
 
 .slider__percent::after {
   position: absolute;
-  content: "90%";
+  content: "0%";
   top: 0;
   right: 0;
 }
@@ -693,6 +697,15 @@ a {
   margin-bottom: -50px;
 }
 
+.button--form:hover {
+  background-color: #fa3848;
+}
+
+.button--form:focus {
+  outline: none;
+  border: 1px solid black;
+}
+
 .contacts {
   width: 50%;
 }
@@ -837,8 +850,8 @@ a {
   position: fixed;
   width: 55px;
   height: 33px;
-  margin-top: 46px;
-  margin-left: 85px;
+  margin-top: 80px;
+  margin-left: 120px;
   top: 0;
   left: 0;
   z-index: 99;
@@ -1012,9 +1025,9 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.9s ease 0s;
+  -o-transition: all 0.9s ease 0s;
+  transition: all 0.9s ease 0s;
 }
 
 .info-title.active::after {

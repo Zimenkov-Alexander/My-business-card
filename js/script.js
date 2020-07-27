@@ -9,7 +9,6 @@ burgerMain.addEventListener('click', function(){
 	burgerMain.classList.toggle("active");
 	pageHeader.classList.toggle("visually-hidden");
 });
-
 buttonHome.addEventListener('mouseover', function(){
 	buttonHome.classList.remove("button--home");
 	buttonHome.classList.add("button--active");
@@ -18,15 +17,6 @@ buttonHome.addEventListener('mouseout', function(){
 	buttonHome.classList.remove("button--active");
 	buttonHome.classList.add("button--home");
 }),4000;
-
-
-
-
-// modalBtn.addEventListener('click', function(){
-// 	buttonHome.classList.toggle("hidden");
-// 	buttonHome.classList.toggle("active");
-// 	modalHome.classList.toggle("visually-hidden");
-// });
 
 // jquery
 $('.info-title').click(function(event) {

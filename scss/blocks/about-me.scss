@@ -29,9 +29,14 @@
 	display: inline-block;
 	border-collapse: collapse;
 	color: #545454;
-
 	a{
-	color: #545454;
+		color: #545454;
+		padding-bottom: 5px;
+		border-bottom: 1px solid rgba(251, 100, 112, 0.5);
+		&:hover{
+			color: $bg-buttom-color;
+			
+		}
 	}
 }
 .info__name, .info__value{
