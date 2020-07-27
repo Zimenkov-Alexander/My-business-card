@@ -17,11 +17,10 @@
 	text-align: center;
 	max-width: 1000px;
 	margin: 0 auto;
-	margin-top: -100px;
+	margin-top: -140px;
 	color: white;
 }
 .home__name{
-	display: inline-block;
 	position: relative;
 	font-size: 50px;
 	padding-top: 25px;
@@ -51,14 +50,72 @@
 }
 .home__profession{
 	font-size: 20px;
-	margin-bottom: 45px;
+	margin-bottom: 40px;
 }
 .button--home{
 	align-self: center;
 	border-radius: 10px;
+	width: 200px;
+	height: 55px;
 	font-size: 22px;
-	padding: 15px 44px;
+	transition: all 3s ease 0s;
+	border: none;
+	&:focus{
+		outline:none;
+		border: none;
+	}
 }
+.button--home .button__item{
+	opacity: 0;
+}
+.button--home .button--home__name{
+	margin: 0;
+	padding: 0;
+}
+.button--active{
+	align-self: center;
+	display: flex;
+	align-items: center;
+	width: 200px;
+	height: 55px;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.2);
+	transition: all 2s ease 0s;
+	&:focus{
+		outline:none;
+		border: none;
+	}
+}
+.button--active .button--home__name{
+	font-size: 0;
+}
+
+.button__item{
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	margin: 0 auto;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: all 3s ease 0s;
+}
+.button__item--telegram{
+	background-image: url(../img/modal/telegram.svg);
+}
+.button__item--viber	{
+	background-image: url(../img/modal/viber.svg);
+}
+.button__item--mobile{
+	background-image: url(../img/modal/mobile.svg);
+}
+.button__item:hover{
+	padding: 2px;
+	transition: all 1s ease 0s;
+}
+
+
+
 
 // ?Тест адаптива
 // @media (max-width: 600px){
