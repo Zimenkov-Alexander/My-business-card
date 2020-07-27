@@ -1,13 +1,27 @@
 let burgerMain = document.querySelector('.burger'),
 	pageHeader = document.querySelector('.page-header'),
-	// infoTitle = document.querySelectorAll('.info-title'),
-	// infoWrapper = document.querySelectorAll('.info-wrapper'),
-	pageExperienceWrapper = document.querySelector('.page-experience-wrapper');
+	pageExperienceWrapper = document.querySelector('.page-experience-wrapper'),
+	buttonHome = document.querySelector('.button--home');
+	modalHome = document.querySelector('#modalHome');
+	modalBtn = document.querySelector('.modal-btn');
+
 
 burgerMain.addEventListener('click', function(){
 	burgerMain.classList.toggle("active");
 	pageHeader.classList.toggle("visually-hidden");
 });
+
+buttonHome.addEventListener('click', function(){
+	buttonHome.classList.toggle("hidden");
+	buttonHome.classList.toggle("active");
+	modalHome.classList.toggle("visually-hidden");
+});
+modalBtn.addEventListener('click', function(){
+	buttonHome.classList.toggle("hidden");
+	buttonHome.classList.toggle("active");
+	modalHome.classList.toggle("visually-hidden");
+});
+
 
 $(document).ready(function() {
 	$('.info-title').click(function(event) {

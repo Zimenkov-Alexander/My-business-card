@@ -15,6 +15,7 @@
 					<div class="main-nav__description">
 						<h2 class="description__name">Alexander Zimenkov</h2>
 						<p class="description__profession">Front-end developer</p>
+						<img class="description__img" src="img/main-nav/1.jpg" width="200" alt="Фото">
 					</div>
 					<ul class="main-nav__list">
 						<li class="list__item">
@@ -49,7 +50,23 @@
 				<div class="home__wrapper">
 					<h2 class="home__name">Александр Зименков</h2>
 					<p class="home__profession">Front-end developer <span class="????">|</span> HTML-верстальщик</p>
-					<button class="button button--home">Contact Me</button>
+					<button class="button button--home active">Contact Me</button>
+						<section id="modalHome" class="modal visually-hidden">
+								<a class="modal__item modal__item--telegram" title="Telegram" href="https://t.me/Zimenkov_UA"></a>		
+								<a class="modal__item modal__item--viber" title="Viber-mobile" href="viber://add?number=380982150300"></a>		
+								<a class="modal__item modal__item--mobile" title="Mobile" href="tel:+380982150300"></a>	
+								<span class="modal-btn" tabindex="0">
+									<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+										viewBox="0 0 51.4 51.4" style="enable-background:new 0 0 51.4 51.4;" xml:space="preserve">
+									<g>
+										<path d="M25.2,49.7c0-0.6-0.4-1-1-1c-6.1,0-11-4.9-11-11v-24h9L12.2,0l-10,13.7h9v24c0,7.2,5.8,13,13,13
+											C24.8,50.7,25.2,50.3,25.2,49.7z"/>
+										<path d="M26.2,1.7c0,0.6,0.4,1,1,1c6.1,0,11,4.9,11,11v24h-9l10,13.7l10-13.7h-9v-24c0-7.2-5.8-13-13-13
+											C26.6,0.7,26.2,1.1,26.2,1.7z"/>
+									</g>
+									</svg>
+								</span>
+						</section>
 				</div>
 			</section>
 			<section class="about-me">
@@ -104,7 +121,7 @@
 							</table>
 						</div>
 						<div class="about-me__image about-me__item">
-							<img class="image__photo" src="/img/about-me/1.jpg" alt="Фото" width="380">
+							<img class="image__photo" src="img/about-me/1.jpg" alt="Фото" width="380">
 						</div>
 					</div>
 			</section>
@@ -358,6 +375,8 @@
 		</footer>
 		</div>
 	</div>
+
+
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script src="js/script.js"></script>
 </body>

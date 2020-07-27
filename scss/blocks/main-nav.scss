@@ -12,17 +12,17 @@
 	flex-direction: column;
 	align-content: flex-end;
 	padding-left: 30px;
-	background-image: linear-gradient(to top, hsl(215, 20%, 12%), hsl(215, 30%, 34%));
+	background-image: linear-gradient(to top, hsl(240, 11%, 13%), hsl(240, 11%, 20%));
 }
 .description__name{
-	font-size: 32px;
+	font-size: 30px;
 	padding-right: 20px;
 	line-height: 36px;
-	padding-bottom: 10px;
-	margin: 150px 0 0 0;
+	padding-bottom: 5px;
+	margin: 170px 0 0;
 }
 .description__profession{
-	margin: 0 0 15px 0;
+	margin: 0 0 20px 0;
 	font-size: 16px;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -35,12 +35,12 @@
 	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 .list__item:hover{
-	background-image: linear-gradient(to top,hsl(215, 30%, 30%) ,hsl(215, 20%, 12%) );
+	background-image: linear-gradient(to bottom, hsl(240, 11%, 13%), hsl(240, 11%, 20%));
 }
 
-// .list__item:nth-child(2n-1):hover{
-// 	background-image: linear-gradient(to top,hsl(215, 30%, 30%) ,hsl(215, 20%, 12%) );
-// }
-// .list__item:nth-child(2n):hover{
-// 	background-image: linear-gradient(to top, hsl(215, 20%, 12%), hsl(215, 30%, 34%));
-// }
+.description__img{
+	position: absolute;
+	border-radius: 50%;
+	margin-top: 30px;
+	width: 120px;
+}

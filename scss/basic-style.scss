@@ -27,6 +27,13 @@ a{
 	padding: 0 15%;
 	margin: 0 auto;
 }
+.page-main{
+	position: relative;
+	width: 100%;
+}
+.hidden{
+	display: none;
+}
 .body__wrapper{
 	display: flex;
 	// max-width: 3200px;

@@ -1,0 +1,64 @@
+.modal{
+	position: relative;
+	box-sizing: border-box;
+	display: flex;
+	width: 220px;
+	height: 70px;
+	margin-left: calc(50% - 110px);
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+.modal__item{
+	width: 100%;
+	margin: 10px;
+	background-position: center;
+	background-size: 45px;
+	background-repeat: no-repeat;
+}
+.modal__item--telegram{
+	background-image: url(../img/modal/telegram.svg);
+}
+.modal__item--viber	{
+	background-image: url(../img/modal/viber.svg);
+}
+.modal__item--mobile{
+	background-image: url(../img/modal/mobile.svg);
+}
+.modal__item:hover{
+	// border: 1px solid rgba(0, 0, 0, 0.445);
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.modal-btn{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 30px;
+	height: 50px;
+	margin-top: 10px;
+	margin-right: -40px;
+	cursor: pointer;
+
+
+}
+.modal-btn:focus{
+	outline: none;
+
+}
+
+
+.modal-btn svg{
+	margin-top: 10px;
+	opacity: 0.2;
+	fill: #fff;
+}
+.modal-btn svg:hover{
+	opacity: 0.8;
+}
+.modal-btn svg:focus{
+
+
+}
+
