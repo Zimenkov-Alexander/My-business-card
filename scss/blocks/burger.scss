@@ -7,6 +7,17 @@
   top: 0;
   left: 0;
   z-index: 99;
+
+  span {
+	content: "";
+	background-color: hsl(355, 95%, 69%);
+	position: absolute;
+	width: 100%;
+	height: 5px;
+	top: 42.5%;
+	left: 0;
+	transition: all 0.5s ease 0s;
+  }
 }
 .burger:before,
 .burger:after {
@@ -24,16 +35,6 @@
 .burger:after {
   bottom: 0;
 }
-.burger span {
-  content: "";
-  background-color: hsl(355, 95%, 69%);
-  position: absolute;
-  width: 100%;
-  height: 5px;
-  top: 42.5%;
-  left: 0;
-  transition: all 0.5s ease 0s;
-}
 
 .burger.active {
   position: fixed;
@@ -44,7 +45,6 @@
   top: 0;
   left: 0;
 }
-
 .burger.active::before,
 .burger.active::after {
   content: "";

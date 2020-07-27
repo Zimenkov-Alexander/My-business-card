@@ -33,11 +33,10 @@
 	font-size: 20px;
 	height: 60px;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	&:hover{
+		background-image: linear-gradient(to bottom, hsl(240, 11%, 13%), hsl(240, 11%, 20%));
+	}
 }
-.list__item:hover{
-	background-image: linear-gradient(to bottom, hsl(240, 11%, 13%), hsl(240, 11%, 20%));
-}
-
 .description__img{
 	position: absolute;
 	border-radius: 50%;

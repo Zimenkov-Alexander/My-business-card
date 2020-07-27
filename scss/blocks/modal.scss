@@ -25,12 +25,9 @@
 	background-image: url(../img/modal/mobile.svg);
 }
 .modal__item:hover{
-	// border: 1px solid rgba(0, 0, 0, 0.445);
 	border-radius: 50%;
 	background-color: rgba(255, 255, 255, 0.2);
 }
-
-
 .modal-btn{
 	position: absolute;
 	top: 0;
@@ -40,25 +37,15 @@
 	margin-top: 10px;
 	margin-right: -40px;
 	cursor: pointer;
-
-
+	&:focus{
+		outline: none;
+	}
+	svg{
+		margin-top: 10px;
+		opacity: 0.2;
+		fill: #fff;
+		&:hover{
+			opacity: 0.8;
+		}
+	}
 }
-.modal-btn:focus{
-	outline: none;
-
-}
-
-
-.modal-btn svg{
-	margin-top: 10px;
-	opacity: 0.2;
-	fill: #fff;
-}
-.modal-btn svg:hover{
-	opacity: 0.8;
-}
-.modal-btn svg:focus{
-
-
-}
-

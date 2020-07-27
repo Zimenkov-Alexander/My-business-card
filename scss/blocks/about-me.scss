@@ -2,7 +2,6 @@
 	flex-grow: 2;
 	background-color: $bg-gray-color;
 	padding-bottom: 50px;
-	
 }
 .about-me__wrapper{
 	display: flex;
@@ -16,11 +15,12 @@
 }
 .about-me__image{
 	margin-left: 50px;
-}
-.about-me__image img{
-	padding-top: 25px;
-	object-fit: cover;
-	object-position: center;
+
+	img{
+		padding-top: 25px;
+		object-fit: cover;
+		object-position: center;
+	}
 }
 .about-me__description{
 	margin: 40px 0 50px;
@@ -29,9 +29,10 @@
 	display: inline-block;
 	border-collapse: collapse;
 	color: #545454;
-}
-.about-me__table a{
+
+	a{
 	color: #545454;
+	}
 }
 .info__name, .info__value{
 	border-bottom: 1px solid #f2f2f2;

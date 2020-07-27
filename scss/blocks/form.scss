@@ -1,24 +1,20 @@
 .flex-wrapper:nth-child(2n-1) {
 	margin-top: 100px;
 }
-
 .form{
 	margin-right: 10%;
 	width: 50%;
 	padding-top: 35px;
 }
-
 .form__heading{
 	font-size: 22px;
 	margin: 0;
 	margin-bottom: 20px;
 	color: #3e3e3e;
-	
 }
 .message-user{
 	display: flex;
 	height: 150px;
-	
 }
 .form-info{
 	display: flex;
@@ -32,9 +28,16 @@
 	padding: 0;	
 	border: none;
 	border-radius: 200px;	
-	
-}
 
+	input{
+		height: 35px;
+		background-position-x: 10px;
+		background-position-y: 50%;
+		background-size: 20px;
+		background-repeat: no-repeat;
+		padding-left: 40px;
+	}
+}
 .form-item input,
 .form-message textarea{
 	box-sizing: border-box;
@@ -43,32 +46,20 @@
 	border: 1px solid $bg-dark-color;
 	padding: 15px;
 	font-size: 14px;
-	
-	
-}
-.form-item input:focus,
-.form-message textarea:focus{
-	outline: none;
-	border: 1px solid $bg-buttom-color;
-	
-}
-.form-item input{
-	height: 35px;
-	background-position-x: 10px;
-	background-position-y: 50%;
-	background-size: 20px;
-	background-repeat: no-repeat;
-	padding-left: 40px;
+	&:focus{
+		outline: none;
+		border: 1px solid $bg-buttom-color;
+	}
 }
 .form-message{
 	position: relative;
-	width: 50%
-}
-.form-message textarea{
-	resize: none;
-	height: 150px;
-}
+	width: 50%;
 
+	textarea{
+		resize: none;
+		height: 150px;
+	}
+}
 #appointment-name{
 	background-image: url('../img/form/name.svg');
 }	
@@ -77,11 +68,7 @@
 }	
 #appointment-subject{
 	background-image: url('../img/form/contract.svg');
-}	
-
-
-
-
+}
 .button--form{
 	box-sizing: border-box;
 	position: absolute;
