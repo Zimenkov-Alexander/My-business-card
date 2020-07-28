@@ -1,5 +1,7 @@
 .flex-wrapper:nth-child(2n-1) {
-	margin-top: 100px;
+	padding-top: 100px;
+	padding-bottom: 150px;
+	background-color: white;
 }
 .form{
 	margin-right: 10%;
@@ -89,5 +91,14 @@
 		outline: none;
 		border: 1px solid black;
 	}
+	&:disabled{
+		background-color: rgba(53, 53, 65, 0.4);
+	}
 }
 
+.form-message textarea:disabled{
+	text-align: center;
+	padding-top: 15px;
+	font-size: 22px;
+	text-transform: uppercase;
+}

@@ -16,7 +16,7 @@
 	height: 5px;
 	top: 42.5%;
 	left: 0;
-	transition: all 0.5s ease 0s;
+	transition: all 1.0s ease 0s;
   }
 }
 .burger:before,
@@ -27,7 +27,7 @@
   width: 100%;
   height: 5px;
   left: 0;
-  transition: all 0.5s ease 0s;
+  transition: all 2.0s ease 0s;
 }
 .burger:before {
   top: 0;
@@ -44,6 +44,7 @@
   margin-left: 300px;
   top: 0;
   left: 0;
+  transition: all 1.0s ease 0s;
 }
 .burger.active::before,
 .burger.active::after {
@@ -57,7 +58,7 @@
   margin-top: 13px;
   transition: none;
   z-index: 1;
-  transition: all 0.5s ease 0s;
+  
 }
 .burger.active:before {
   transform: rotate(45deg);

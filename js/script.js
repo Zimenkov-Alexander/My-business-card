@@ -1,14 +1,14 @@
 let burgerMain = document.querySelector('.burger'),
 	pageHeader = document.querySelector('.page-header'),
+	mainNav = document.querySelector('.main-nav__wrapper');
 	pageExperienceWrapper = document.querySelector('.page-experience-wrapper'),
 	buttonHome = document.querySelector('.home__wrapper').querySelector('.button');
 	modalHome = document.querySelector('#modalHome');
-	// modalBtn = document.querySelector('.modal-btn');
 
 burgerMain.addEventListener('click', function(){
 	burgerMain.classList.toggle("active");
-	pageHeader.classList.toggle("visually-hidden");
-});
+	pageHeader.classList.toggle("active");
+}),3000;
 buttonHome.addEventListener('mouseover', function(){
 	buttonHome.classList.remove("button--home");
 	buttonHome.classList.add("button--active");

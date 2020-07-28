@@ -10,10 +10,10 @@
 </head>
 <body>
 	<div class="body__wrapper">
-		<header class="page-header visually-hidden">
-			<nav class="main-nav main-nav--closed main-nav--opened active">
+		<header class="page-header active">
+			<nav class="main-nav main-nav--closed main-nav--opened ">
 				<div class="main-nav__wrapper">
-					<div class="main-nav__description">
+					<div class="main-nav__description ">
 						<h2 class="description__name">Alexander Zimenkov</h2>
 						<p class="description__profession">Front-end developer</p>
 						<img class="description__img" src="img/main-nav/1.jpg" width="200" alt="Фото">
@@ -292,24 +292,24 @@
 						<!-- <form class="message-user" action="https://echo.htmlacademy.ru" method="POST"> -->
 							<div class="form-info">
 								<p class="form-item">
-									<label for="appointment-name" class="visually-hidden">Name</label>
-									<input id="appointment-name" type="text" name="name" placeholder="name">
+									<label for="appointment-name" class="visually-hidden">Имя</label>
+									<input disabled id="appointment-name" type="text" name="name" placeholder="name">
 								</p>
 								<p class="form-item">
 									<label for="appointment-email" class="visually-hidden">Email</label>
-									<input id="appointment-email" type="text" name="email" placeholder="email">
+									<input disabled id="appointment-email" type="text" name="email" placeholder="email">
 								</p>
 								<p class="form-item">
-									<label for="appointment-subject" class="visually-hidden">Subject</label>
-									<input id="appointment-subject" type="text" name="subject" placeholder="subject (Тема)">
+									<label for="appointment-subject" class="visually-hidden">Тема сообщения</label>
+									<input disabled id="appointment-subject" type="text" name="subject" placeholder="subject (Тема)">
 								</p>
 							</div>
 							<div class="form-message">
 								<p class="form-item">
 									<label for="appointment-message" class="visually-hidden">Message</label>
-									<textarea name="" type="text" name="message" id="appointment-message" placeholder="Форма пока не работает" rows="auto"></textarea>
+									<textarea disabled name="" type="text" name="message" id="appointment-message" placeholder="Из-за проблем с хостингом отправка формы на данный момент не работает" rows="auto"></textarea>
 								</p>
-								<input class="button button--form" type="submit" value="Hire Me!">
+								<input disabled class="button button--form" type="submit" value="Hire Me!">
 							</div>
 						</form>
 					</div>
