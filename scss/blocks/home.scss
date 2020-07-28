@@ -75,8 +75,8 @@
 	align-self: center;
 	display: flex;
 	align-items: center;
-	width: 200px;
-	height: 55px;
+	width: 250px;
+	height: 75px;
 	border-radius: 10px;
 	background-color: rgba(255, 255, 255, 0.2);
 	transition: all 2s ease 0s;
@@ -87,7 +87,6 @@
 .button--active .button--home__name{
 	font-size: 0;
 }
-
 .button__item{
 	width: 40px;
 	height: 40px;
@@ -96,7 +95,6 @@
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	transition: all 3s ease 0s;
 }
 .button__item--telegram{
 	background-image: url(../img/modal/telegram.svg);
@@ -108,7 +106,7 @@
 	background-image: url(../img/modal/mobile.svg);
 }
 .button__item:hover{
-	padding: 2px;
+	padding: 5px;
 	transition: all 1s ease 0s;
 }
 .scrolling--decor{
@@ -117,7 +115,6 @@
 	content: "";
 	width: 20px;
 	height: 35px;
-	// background-color: white;
 	left: 50%;
 	margin-left: -10px;
 	margin-top: -50px;

@@ -1253,8 +1253,8 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 200px;
-  height: 55px;
+  width: 250px;
+  height: 75px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.2);
   -webkit-transition: all 2s ease 0s;
@@ -1278,9 +1278,6 @@ a {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  -webkit-transition: all 3s ease 0s;
-  -o-transition: all 3s ease 0s;
-  transition: all 3s ease 0s;
 }
 
 .button__item--telegram {
@@ -1296,7 +1293,7 @@ a {
 }
 
 .button__item:hover {
-  padding: 2px;
+  padding: 5px;
   -webkit-transition: all 1s ease 0s;
   -o-transition: all 1s ease 0s;
   transition: all 1s ease 0s;
