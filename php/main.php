@@ -1,43 +1,64 @@
-<!-- Нужно проверить на сервере -->
+<?php
+// Файлы phpmailer
+require 'phpmailer/PHPMailer.php';
+require 'phpmailer/SMTP.php';
+require 'phpmailer/Exception.php';
 
-<?php 
-
-require_once('phpmailer/PHPMailerAutoload.php');
-$mail = new PHPMailer;
-$mail->CharSet = 'utf-8';
-
+// Переменные
 $name = $_POST['name'];
 $email = $_POST['email'];
 $subject = $_POST['subject'];
-$message = $_POST['message'];
+$text = $_POST['message'];
 
-//$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
-$mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.gmail.com';  																							// Specify main and backup SMTP servers
-$mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'BusinessCard.Zimenkov@gmail.com'; // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = 'Creative55'; // Ваш пароль от почты с которой будут отправляться письма
-$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
+// Формирование самого письма
+$title = $subject;
+$body = "
+<h2>Новое письмо</h2>
+<b>Имя:</b> $name<br>
+<b>Почта:</b> $email<br><br>
+<b>Сообщение:</b><br>$text
+";
 
-$mail->setFrom('BusinessCard.Zimenkov@gmail.com'); // от кого будет уходить письмо?
-$mail->addAddress('Zimenkoviuai@gmail.com');     // Кому будет уходить письмо 
-//$mail->addAddress('ellen@example.com');               // Name is optional
-//$mail->addReplyTo('info@example.com', 'Information');
-//$mail->addCC('cc@example.com');
-//$mail->addBCC('bcc@example.com');
-//$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-//$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
-$mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = .$subject;
-$mail->Body    = '' .$name . ' написал письмо с содержимым:<br>' .$message. '<br>Почта этого пользователя: ' .$email;
-$mail->AltBody = '';
+// Настройки
 
-if(!$mail->send()) {
-    echo 'Error';
-} else {
-    header('location: ../index.html');
+$mail = new PHPMailer\PHPMailer\PHPMailer();
+try {
+    $mail->isSMTP();   
+    $mail->CharSet = "UTF-8";
+    $mail->SMTPAuth   = true;
+    $mail->SMTPDebug = 2;
+    $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
+
+    // Настройки вашей почты
+    $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
+    $mail->Username   = 'BusinessCard.Zimenkov'; // Логин на почте
+    $mail->Password   = 'Creative55'; // Пароль на почте
+    $mail->SMTPSecure = 'ssl';
+    $mail->Port       = 465;
+    $mail->setFrom('BusinessCard.Zimenkov@gmail.com', 'BusinessCard.Zimenkov'); // Адрес самой почты и имя отправителя
+
+    // Получатель письма
+    $mail->addAddress('Zimenkoviuai@gmail.com');  
+    // $mail->addAddress('youremail@gmail.com'); // Ещё один, если нужен
+
+ 
+// Отправка сообщения
+$mail->isHTML(true);
+$mail->Subject = $title;
+$mail->Body = $body;    
+
+// Проверяем отравленность сообщения
+if ($mail->send()) {$result = "success";} 
+else {$result = "error";}
+
+} catch (Exception $e) {
+    $result = "error";
+    $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
 }
+
+// Отображение результата
+echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+
 ?>
