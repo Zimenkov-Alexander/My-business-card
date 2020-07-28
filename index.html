@@ -11,32 +11,30 @@
 </head>
 <body>
 	<div class="body__wrapper">
-		<header class="page-header active">
+		<header class="page-header">
+			<!-- active -->
 			<nav class="main-nav main-nav--closed main-nav--opened ">
-				<div class="main-nav__wrapper">
-					<div class="main-nav__description ">
+				<div class="main-nav__wrapper ">
+					<div class="main-nav__description  ">
 						<h2 class="description__name">Alexander Zimenkov</h2>
 						<p class="description__profession">Front-end developer</p>
 						<img class="description__img" src="img/main-nav/1.jpg" width="200" alt="Фото">
 					</div>
 					<ul class="main-nav__list">
-						<li class="list__item">
-							<a href="#">Главная</a>
+						<li>
+							<a class="list__item" href="#home">Главная</a>
 						</li>
-						<li class="list__item">
-							<a href="#">Обо мне</a>
+						<li >
+							<a class="list__item" href="#about-me">Обо мне</a>
 						</li>
-						<li class="list__item">
-							<a href="#">Обучение</a>
+						<li>
+							<a class="list__item" href="#skills">Навыки</a>
 						</li>
-						<li class="list__item">
-							<a href="#">Опыт работы</a>
+						<li>
+							<a class="list__item" href="#work-experience">Опыт работы</a>
 						</li>
-						<li class="list__item">
-							<a href="#">Навыки</a>
-						</li>
-						<li class="list__item">
-							<a href="#">Контакты</a>
+						<li >
+							<a class="list__item" href="#contacts">Контакты</a>
 						</li>
 					</ul>
 				</div>
@@ -45,10 +43,10 @@
 		<div class="page__wrapper">
 		<main class="page-main">
 			<h1 class="visually-hidden">Визиткая карточка Александра Зименкова</h1>
-			<div class="burger">
+			<div class="burger active">
 				<span></span>
 			</div>
-			<section class="home">
+			<section class="home" id="home">
 				<div class="home__wrapper">
 					<h2 class="home__name">Александр Зименков</h2>
 					<p class="home__profession">Front-end developer <span class="????">|</span> HTML-верстальщик</p>
@@ -61,7 +59,7 @@
 				</div>
 				<span class="scrolling--decor"></span>
 			</section>
-			<section class="about-me">
+			<section class="about-me" id="about-me">
 					<div class="about-me__wrapper container">
 						<div class="about-me__item">
 							<h2 class="heading-h2 heading-h2--line">About Me</h2>
@@ -117,7 +115,7 @@
 						</div>
 					</div>
 			</section>
-			<section class="skills">
+			<section class="skills" id="skills">
 					<div class="skills__wrapper container">
 						<h2 class="skills__heading heading-h2 heading-h2--line">My Skills</h2>
 						<div class="skills__item__wrapper">
@@ -200,7 +198,7 @@
 					</div>
 			</section>	
 			<div class="flex-wrapper container">
-				<section class="work-experience">
+				<section class="work-experience" id="work-experience">
 					<h2 class="heading-h2 heading-h2--line">Work Experience</h2>
 					<div class="experience__wrapper">
 						<div class="information-block">
@@ -242,7 +240,7 @@
 					</div>
 				</section>
 				<span class="decor"></span>
-				<section class="education">
+				<section class="education" id="education">
 					<h2 class="heading-h2 heading-h2--line">Education</h2>
 					<div class="experience__wrapper one">
 						<div class="information-block">
@@ -285,7 +283,7 @@
 				</section>
 			</div>
 			<div class="flex-wrapper container">
-				<section class="form">
+				<section class="form" id="form">
 					<h2 class="visually-hidden">Форма для связи</h2>
 					<h3 class="form__heading">Leave a Message</h3>
 					<div class="form__wrapper">
@@ -315,7 +313,7 @@
 						</form>
 					</div>
 				</section>
-				<section class="contacts">
+				<section class="contacts" id="contacts">
 					<h2 class="visually-hidden">Контакты</h2>
 					<div class="contacts__wrapper">
 						<div class="contacts__item">

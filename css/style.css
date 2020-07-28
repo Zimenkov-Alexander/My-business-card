@@ -1126,6 +1126,10 @@ a {
 .list__item {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
   padding: 15px 30px;
   font-size: 20px;
   height: 60px;
