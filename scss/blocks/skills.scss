@@ -48,7 +48,6 @@
 	content: "";
 	top: 0;
 	left: 0;
-	width: $skills-html;
 	height: 5px;
 	background-color: $bg-buttom-color;
 }
@@ -64,58 +63,133 @@
 	right: 0;
 }
 
+// Слайдер
 .skills__html.slider__level::after{
 	width: $skills-html;
+
+	animation-name: skills__html;
+	animation-duration: 3.5s;
+	animation-timing-function: ease-in;
 }
 .skills__css.slider__level::after{
 	width: $skills-css;
+
+	animation-name: skills__css;
+	animation-duration: 3.5s;
+	animation-timing-function: ease-in;
 }
 .skills__scss.slider__level::after{
 	width: $skills-scss;
+
+	animation-name: skills__scss;
+	animation-duration: 3.5s;
+	animation-timing-function: ease-in;
+	
 }
 .skills__javascript.slider__level::after{
 	width: $skills-javascript;
+
+	animation-name: skills__javascript;
+	animation-duration: 3.5s;
+	animation-timing-function: ease-in;
 }
 .skills__react.slider__level::after{
 	width: $skills-react;
+
+	animation-name: skills__react;
+	animation-duration: 3.5s;
+	animation-timing-function: ease-in;
 }
 .skills__photoshop.slider__level::after{
 	width: $skills-photoshop;
+
+	animation-name: skills__photoshop;
+	animation-duration: 3.5s;
+	animation-timing-function: ease-in;
 }
 .skills__jira.slider__level::after{
 	width: $skills-jira;
+
+	animation-name: skills__jira;
+	animation-duration: 3.5s;
+	animation-timing-function: ease-in;
 }
 .skills__github.slider__level::after{
 	width: $skills-github;
+
+	animation-name: skills__github;
+	animation-duration: 3.5s;
+	animation-timing-function: ease-in;
 }
 .skills__testing.slider__level::after{
 	width: $skills-testing;
+
+	animation-name: skills__testing;
+	animation-duration: 3.5s;
+	animation-timing-function: ease-in;
 }
 
+// Текст
 .skills__html .slider__percent::after{
 	content: $skills-html + "";
+
+	animation-name: skills__html--content;
+	animation-duration: 3.5s;
+	animation-timing-function: ease-in;
 }
 .skills__css .slider__percent::after{
 	content: $skills-css + "";
+
+	animation-name: skills__css--content;
+	animation-duration: 3.5s;
+	animation-timing-function: ease-in;
 }
 .skills__scss .slider__percent::after{
 	content: $skills-scss + "";
+
+	animation-name: skills__scss--content;
+	animation-duration: 3.5s;
+	animation-timing-function: ease-in;
 }
 .skills__javascript .slider__percent::after{
 	content: $skills-javascript + "";
+
+	animation-name: skills__javascript--content;
+	animation-duration: 3.5s;
+	animation-timing-function: ease-in;
 }
 .skills__react .slider__percent::after{
 	content: $skills-react + "";
+
+	animation-name: skills__react--content;
+	animation-duration: 3.5s;
+	animation-timing-function: ease-in;
 }
 .skills__photoshop .slider__percent::after{
 	content: $skills-photoshop + "";
+
+	animation-name: skills__photoshop--content;
+	animation-duration: 3.5s;
+	animation-timing-function: ease-in;
 }
 .skills__jira .slider__percent::after{
 	content: $skills-jira + "";
+
+	animation-name: skills__jira--content;
+	animation-duration: 3.5s;
+	animation-timing-function: ease-in;
 }
 .skills__github .slider__percent::after{
 	content: $skills-github + "";
+
+	animation-name: skills__github--content;
+	animation-duration: 3.5s;
+	animation-timing-function: ease-in;
 }
 .skills__testing .slider__percent::after{
 	content: $skills-testing + "";
+
+	animation-name: skills__testing--content;
+	animation-duration: 3.5s;
+	animation-timing-function: ease-in;
 }

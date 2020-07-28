@@ -111,8 +111,37 @@
 	padding: 2px;
 	transition: all 1s ease 0s;
 }
-
-
+.scrolling--decor{
+	box-sizing: border-box;
+	position: absolute;
+	content: "";
+	width: 20px;
+	height: 35px;
+	// background-color: white;
+	left: 50%;
+	margin-left: -10px;
+	margin-top: -50px;
+	border: 2px solid white;
+	border-radius: 40%;
+}
+.scrolling--decor::before{
+	position: absolute;
+	content: "";
+	width: 4px;
+	height: 4px;
+	background-color: white;
+	border-radius: 50%;
+	top: 50%;
+	left: 50%;
+	margin-top: -2px;
+	margin-left: -2px;
+	animation-name: home--scrolling;
+	animation-duration: 1.5s;
+	animation-direction: alternate;
+	animation-timing-function: ease-in;
+	animation-iteration-count: infinite;
+	animation-delay: -0.5s;
+}
 
 
 // ?Тест адаптива
