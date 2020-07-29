@@ -21,14 +21,20 @@
 	display: flex;
 	width: 100%;
 	flex-direction: column;
-	
+	a{
+		transition: all 1s ease 0s;
+	}
+	a:hover{
+		color: $bg-buttom-color;
+	}
 }
 .item__name{
 	font-size: 20px;
 	margin: 0
 }
 .item__info{
+	color: $bg-item-color;
+
 	margin-top: 5px;
 	font-size: 16px;
-
 }

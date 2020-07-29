@@ -7,15 +7,17 @@
 	display: flex;
 	justify-content: space-between;
 	padding-top: 25px; 
+	
+	
 }
 .about-me__item:nth-child(1){
 	max-width: 55%;
-	text-align: start;
+	
 	
 }
 .about-me__image{
 	margin-left: 50px;
-
+	min-width: 200px;
 	img{
 		padding-top: 25px;
 		object-fit: cover;
@@ -23,7 +25,7 @@
 	}
 }
 .about-me__description{
-	margin: 40px 0 50px;
+	margin: 40px 0 45px;
 }
 .about-me__table {
 	display: inline-block;

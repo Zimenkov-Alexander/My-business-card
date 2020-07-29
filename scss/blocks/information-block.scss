@@ -89,3 +89,6 @@
 	background-size: cover;
 	transform: rotate(180deg);
 }
+.info-description ul li::before{
+	content: "-";
+}
