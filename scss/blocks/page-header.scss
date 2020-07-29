@@ -16,4 +16,19 @@
 
 }
 
+@media (max-width: $tablet-width){
+	.page-header{
+		display: inline;
+		min-width: inherit; 
+	}
+	.page-header.active{
+		display: none;
+	}
+}
 
+@media (max-width: $mobile-width){
+	.page-header{
+		min-height: 100vh;
+	}
+	
+}
