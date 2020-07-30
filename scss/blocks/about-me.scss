@@ -7,8 +7,6 @@
 	display: flex;
 	justify-content: space-between;
 	padding-top: 25px; 
-	
-	
 }
 .about-me__item:nth-child(1){
 	max-width: 55%;
@@ -51,4 +49,10 @@
 }
 .info__value{
 	padding-right: 50px ;
+}
+
+@media (max-width: $mobile-width){
+	.about-me__wrapper{
+		flex-direction: column;
+	}
 }
