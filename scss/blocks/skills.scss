@@ -193,3 +193,10 @@
 	animation-duration: 3.5s;
 	animation-timing-function: ease-in;
 }
+
+
+@media (max-width: $tablet-width){
+	.skills__item{
+		width: 50%;
+	}
+}

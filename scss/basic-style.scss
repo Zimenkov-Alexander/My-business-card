@@ -88,10 +88,14 @@ a{
 	overflow: hidden;
 }
 
-@media (max-width: $mobile-width){
+
+@media (max-width: $tablet-width){
 	.flex-wrapper{
 		flex-direction: column;
 	}
+}
+
+@media (max-width: $mobile-width){
 	.container{
 		padding: 0 8%;
 	}

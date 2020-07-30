@@ -121,13 +121,16 @@ a {
   overflow: hidden;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .flex-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
+}
+
+@media (max-width: 768px) {
   .container {
     padding: 0 8%;
   }
@@ -2023,6 +2026,12 @@ a {
   animation-duration: 3.5s;
   -webkit-animation-timing-function: ease-in;
   animation-timing-function: ease-in;
+}
+
+@media (max-width: 992px) {
+  .skills__item {
+    width: 50%;
+  }
 }
 
 .flex-wrapper:nth-child(2n-1) {
