@@ -103,10 +103,13 @@
 }
 
 @media (max-width: $tablet-width){
-
-}
-
-
-@media (max-width: $mobile-width){
-
+	.flex-wrapper:nth-child(2n-1) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.form{
+		margin: 0;
+		width: 100%;
+		padding-top: 0;
+	}
 }
