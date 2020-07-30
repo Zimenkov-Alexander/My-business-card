@@ -2243,8 +2243,35 @@ a {
 }
 
 @media (max-width: 992px) {
+  .contacts__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 70px;
+  }
   .contacts {
     width: 100%;
+  }
+  .contacts__item {
+    padding: 10px 15px;
+  }
+  .item__img {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .item__img {
+    margin-right: 25px;
   }
 }
 
