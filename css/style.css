@@ -1,7 +1,6 @@
 body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  min-width: 320px;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -1293,7 +1292,8 @@ a {
     align-content: center;
     padding: 0;
     padding-top: 15px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   }
   .description__img {
     margin-top: 35px;
@@ -1319,6 +1319,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -1349,7 +1350,6 @@ a {
   position: absolute;
   width: 100%;
   max-width: 60%;
-  text-align: center;
   height: 2px;
   top: 0;
   left: 50%;
@@ -1490,6 +1490,99 @@ a {
   animation-iteration-count: infinite;
   -webkit-animation-delay: -0.5s;
   animation-delay: -0.5s;
+}
+
+@media (max-width: 992px) {
+  .home__wrapper {
+    margin-top: -40px;
+  }
+  .home__name {
+    font-size: 40px;
+  }
+  .home__name::before,
+  .home__name::after {
+    width: 50%;
+    margin-left: -25%;
+  }
+  .home__profession {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .button--home {
+    width: 180px;
+    height: 50px;
+    font-size: 21px;
+  }
+  .button--active {
+    width: 220px;
+    height: 70px;
+  }
+  .scrolling--decor {
+    width: 60px;
+    height: 60px;
+    border: none;
+    margin-left: -30px;
+    margin-top: -120px;
+  }
+  .scrolling--decor::before {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-radius: initial;
+    width: 60px;
+    height: 60px;
+    margin-left: -10px;
+    background-image: url(../img/home/zoom_1.svg);
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    margin: 0 auto;
+    min-width: 100%;
+  }
+  .home__wrapper {
+    width: 100%;
+    margin-top: -100px;
+  }
+  .home__name {
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+    text-align: center;
+  }
+  .home__name::before,
+  .home__name::after {
+    display: none;
+    width: 100%;
+    left: 50;
+    margin-left: -50%;
+  }
+  .home__name::before {
+    margin-top: 10px;
+  }
+  .home__name::after {
+    margin-top: 80px;
+  }
+  .scrolling--decor {
+    width: 40px;
+    height: 40px;
+    border: none;
+    margin-left: -30px;
+    margin-top: -120px;
+  }
+  .scrolling--decor::before {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-radius: initial;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    background-image: url(../img/home/zoom_1.svg);
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+  }
 }
 
 .about-me {

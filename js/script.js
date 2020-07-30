@@ -16,19 +16,38 @@ let skillsHtml = document.querySelector('.level-html'),
 	skillsGithub = document.querySelector('.level-github'),
 	skillsTesting = document.querySelector('.level-testing');
 
+function delay(f, ms) {
+
+	return function() {
+		setTimeout(() => f.apply(this, arguments), ms);
+	};	  
+}
+
+
+
 
 burgerMain.addEventListener('click', function(){
 	burgerMain.classList.toggle("active");
 	pageHeader.classList.toggle("active");
-}),3000;
+}),500;
+
 buttonHome.addEventListener('mouseover', function(){
-	buttonHome.classList.remove("button--home");
-	buttonHome.classList.add("button--active");
-}),3000;
+	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+		function addActive(){
+			buttonHome.classList.remove("button--home");
+			buttonHome.classList.add("button--active");
+		}
+		setTimeout(addActive,500)
+	  } else {
+		buttonHome.classList.remove("button--home");
+		buttonHome.classList.add("button--active");
+	}
+}),2000;
+
 buttonHome.addEventListener('mouseout', function(){
-	buttonHome.classList.remove("button--active");
-	buttonHome.classList.add("button--home");
-}),4000;
+		buttonHome.classList.remove("button--active");
+		buttonHome.classList.add("button--home");
+}),2000;
 
 
 // ? Отслеживание элемента на странице
@@ -63,10 +82,19 @@ let Visible = function (target) {
 	skillsJira.classList.add('skills__jira');
 	skillsGithub.classList.add('skills__github');
 	skillsTesting.classList.add('skills__testing');
-
   } else {
 	// Если элемент не видно, то запускаем этот код
-	
+	if(skillsJs.classList.contains('skills__javascript')){
+		skillsHtml.classList.remove('skills__html');
+		skillsCss.classList.remove('skills__css');
+		skillsScss.classList.remove('skills__scss');
+		skillsJs.classList.remove('skills__javascript');
+		skillsReact.classList.remove('skills__react');
+		skillsPhotoshop.classList.remove('skills__photoshop');
+		skillsJira.classList.remove('skills__jira');
+		skillsGithub.classList.remove('skills__github');
+		skillsTesting.classList.remove('skills__testing');
+	}
   };
 };
 // Запускаем функцию при прокрутке страницы
