@@ -93,6 +93,9 @@ a{
 	.flex-wrapper{
 		flex-direction: column;
 	}
+	.decor::before{
+		display: none;
+	}
 }
 
 @media (max-width: $mobile-width){

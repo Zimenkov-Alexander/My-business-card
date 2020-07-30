@@ -128,6 +128,9 @@ a {
     -ms-flex-direction: column;
     flex-direction: column;
   }
+  .decor::before {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2313,6 +2316,14 @@ a {
   padding-top: 25px;
   width: 50%;
   margin-left: 5%;
+}
+
+@media (max-width: 992px) {
+  .work-experience, .education {
+    padding-top: 0;
+    margin: 0;
+    width: 100%;
+  }
 }
 
 .burger {
