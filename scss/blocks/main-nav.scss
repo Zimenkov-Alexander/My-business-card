@@ -87,53 +87,22 @@
 		margin-top: 35px;
 	}
 }
-@media (max-width: $mobile-width){
-	.main-nav__wrapper{
-		width: 100%;
-		z-index: 1;
-	}
-	
-	.main-nav__description{
-		padding-bottom: 40px;
-	}
-	.description__name{
-		margin: 50px 30px 0 150px;
-	}
-	.description__profession{
-		margin: 0;
-		margin-left: 150px;
-	}
-	.main-nav__list{
-		display: flex;
-		justify-content: space-around;
-		flex-wrap: wrap;
-	}
-	.main-nav__list li{
-		flex-grow: 1;
-	}
-	.list__item{	
-		justify-content: center;
-		align-content: center;
-		padding: 0;
-		padding-top: 15px;
-		min-height: 50px;
-		border: 1px solid rgba(0, 0, 0, 0.2);
-	}
-	.description__img{
-		margin-top: 35px;
-	}
-}
 
 @media (max-width: $mobile-width){
+	.main-nav__description{
+		display: flex;
+		flex-direction: column;
+	}
+
 	.main-nav__wrapper{
 		height: 100%;
 	}
 	.description__name{
-		margin: 50px 65px 0 150px;
+		margin: 0;
+		margin-top: 170px;
 	}
 	.description__profession{
 		margin: 0;
-		margin-left: 150px;
 	}
 	.main-nav__list{
 		display: flex;
