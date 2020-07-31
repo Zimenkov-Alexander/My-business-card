@@ -16,16 +16,6 @@ let skillsHtml = document.querySelector('.level-html'),
 	skillsGithub = document.querySelector('.level-github'),
 	skillsTesting = document.querySelector('.level-testing');
 
-function delay(f, ms) {
-
-	return function() {
-		setTimeout(() => f.apply(this, arguments), ms);
-	};	  
-}
-
-
-
-
 burgerMain.addEventListener('click', function(){
 	burgerMain.classList.toggle("active");
 	pageHeader.classList.toggle("active");
@@ -72,7 +62,7 @@ let Visible = function (target) {
     targetPosition.top < windowPosition.bottom && // Если позиция верхней части элемента меньше позиции нижней чайти окна, то элемент виден снизу
     targetPosition.right > windowPosition.left && // Если позиция правой стороны элемента больше позиции левой части окна, то элемент виден слева
     targetPosition.left < windowPosition.right) { // Если позиция левой стороны элемента меньше позиции правой чайти окна, то элемент виден справа
-    // Если элемент полностью видно, то запускаем следующий код
+	// Если элемент полностью видно, то запускаем следующий код
 	skillsHtml.classList.add('skills__html');
 	skillsCss.classList.add('skills__css');
 	skillsScss.classList.add('skills__scss');
@@ -84,7 +74,7 @@ let Visible = function (target) {
 	skillsTesting.classList.add('skills__testing');
   } else {
 	// Если элемент не видно, то запускаем этот код
-	if(skillsJs.classList.contains('skills__javascript')){
+	if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 		skillsHtml.classList.remove('skills__html');
 		skillsCss.classList.remove('skills__css');
 		skillsScss.classList.remove('skills__scss');
@@ -94,30 +84,36 @@ let Visible = function (target) {
 		skillsJira.classList.remove('skills__jira');
 		skillsGithub.classList.remove('skills__github');
 		skillsTesting.classList.remove('skills__testing');
+	  }						
 	}
-  };
 };
 // Запускаем функцию при прокрутке страницы
 window.addEventListener('scroll', function() {
-  Visible (skillsTesting);
+  Visible (skillsReact);
 });
 // А также запустим функцию сразу. А то вдруг, элемент изначально видно
-Visible (skillsHtml);
+Visible (skillsReact);
 
 
 // jquery
-$('.info-title').click(function(event) {
-	if ($('.experience__wrapper').hasClass('one')){
-		$('.info-title').not($(this)).removeClass('active');
-		$('.info-wrapper').not($(this).next()).slideUp(300);
-	}
-	$(this).toggleClass('active').next().slideToggle(300);
+$(document).ready(function() {
+    $('.info-title').click(function(event) {
+		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+			if ($('.experience__wrapper').hasClass('one')){
+				$('.info-title').not($(this)).removeClass('active');
+				$('.info-wrapper').not($(this).next()).slideUp(300);
+			}
+		}
+		$(this).toggleClass('active').next().slideToggle(300);
+	});
+	
+	
+	$("#menu").on("click","a", function (event) {
+		event.preventDefault();
+		let id  = $(this).attr('href'),
+		top = $(id).offset().top;
+		$('body,html').animate({scrollTop: top}, 1000);
+	});
 });
 
 
-$("#menu").on("click","a", function (event) {
-	event.preventDefault();
-	let id  = $(this).attr('href'),
-	top = $(id).offset().top;
-	$('body,html').animate({scrollTop: top}, 1000);
-});
