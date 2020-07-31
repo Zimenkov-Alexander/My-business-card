@@ -2689,3 +2689,12 @@ a {
 .info-description ul li::before {
   content: "-";
 }
+
+@media (max-width: 768px) {
+  .info-place {
+    padding-right: 50px;
+  }
+  .information-block {
+    min-width: 280px;
+  }
+}
