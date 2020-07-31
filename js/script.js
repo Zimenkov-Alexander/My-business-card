@@ -35,8 +35,16 @@ buttonHome.addEventListener('mouseover', function(){
 }),2000;
 
 buttonHome.addEventListener('mouseout', function(){
+	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+		function addRemove(){
+			buttonHome.classList.remove("button--active");
+			buttonHome.classList.add("button--home");
+		}
+		setTimeout(addRemove,500)
+	  } else {
 		buttonHome.classList.remove("button--active");
 		buttonHome.classList.add("button--home");
+	}
 }),2000;
 
 
