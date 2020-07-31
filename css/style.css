@@ -2259,7 +2259,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -2267,6 +2267,7 @@ a {
 }
 
 .item__wrapper a {
+  border-bottom: 1px solid rgba(251, 100, 112, 0.5);
   -webkit-transition: all 1s ease 0s;
   -o-transition: all 1s ease 0s;
   transition: all 1s ease 0s;
