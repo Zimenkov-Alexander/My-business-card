@@ -200,3 +200,8 @@
 		width: 50%;
 	}
 }
+@media (max-width: $mobile-width){
+	.skills__item__wrapper{
+		margin-top: 0px;
+	}
+}

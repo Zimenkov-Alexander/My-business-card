@@ -23,3 +23,9 @@
 		width: 100%;
 	}
 }
+@media (max-width: $mobile-width){
+	.experience__wrapper{
+		margin-top: 40px;	
+	}
+
+}

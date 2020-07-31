@@ -116,8 +116,10 @@
 @media (max-width: $mobile-width){
 	.message-user{
 		display: flex;
-		flex-direction: column;
-		
+		flex-direction: column;	
+	}
+	.form__heading{
+		font-size: 26px;
 	}
 	.form-item{
 		margin: 5px 0;
@@ -130,6 +132,7 @@
 		font-size: 16px;
 	}
 	.form-message textarea{
+		margin-top: 10px;
 			height: 100px;
 			padding: 20px;
 		}

@@ -138,6 +138,9 @@ a {
   .container {
     padding: 0 8%;
   }
+  .heading-h2 {
+    padding: 0;
+  }
 }
 
 @-webkit-keyframes home--scrolling {
@@ -1739,6 +1742,9 @@ a {
   .about-me__item::before {
     display: none;
   }
+  .about-me__description {
+    margin: 10px 0 30px;
+  }
   .about-me__table {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1755,7 +1761,6 @@ a {
   }
   .about-me__image {
     margin: 0;
-    margin-top: 20px;
     text-align: center;
   }
   .about-me__image img {
@@ -2038,6 +2043,12 @@ a {
   }
 }
 
+@media (max-width: 768px) {
+  .skills__item__wrapper {
+    margin-top: 0px;
+  }
+}
+
 .flex-wrapper:nth-child(2n-1) {
   padding-top: 100px;
   padding-bottom: 150px;
@@ -2191,6 +2202,9 @@ a {
     -ms-flex-direction: column;
     flex-direction: column;
   }
+  .form__heading {
+    font-size: 26px;
+  }
   .form-item {
     margin: 5px 0;
   }
@@ -2202,6 +2216,7 @@ a {
     font-size: 16px;
   }
   .form-message textarea {
+    margin-top: 10px;
     height: 100px;
     padding: 20px;
   }
@@ -2305,6 +2320,9 @@ a {
   }
   .item__img {
     margin-right: 25px;
+  }
+  .contacts__item {
+    margin-top: 5px;
   }
 }
 
@@ -2417,6 +2435,12 @@ a {
     padding-top: 0;
     margin: 0;
     width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience__wrapper {
+    margin-top: 40px;
   }
 }
 
