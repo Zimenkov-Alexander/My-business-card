@@ -60,6 +60,10 @@
 
 
 @media (max-width: $mobile-width){
+	.contacts__wrapper{
+		margin-top: 170px;
+	}
+
 	.item__img{
 		margin-right: 25px;
 	}

@@ -2181,6 +2181,35 @@ a {
   }
 }
 
+@media (max-width: 768px) {
+  .message-user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .form-item {
+    margin: 5px 0;
+  }
+  .form-info, .form-message {
+    width: 100%;
+  }
+  .form-item input,
+  .form-message textarea {
+    font-size: 16px;
+  }
+  .form-message textarea {
+    height: 100px;
+    padding: 20px;
+  }
+  .form-message textarea:disabled {
+    font-size: 18px;
+  }
+}
+
 .contacts {
   width: 50%;
 }
@@ -2271,6 +2300,9 @@ a {
 }
 
 @media (max-width: 768px) {
+  .contacts__wrapper {
+    margin-top: 170px;
+  }
   .item__img {
     margin-right: 25px;
   }
