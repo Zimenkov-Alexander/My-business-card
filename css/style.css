@@ -102,7 +102,7 @@ a {
   width: 4px;
   height: 50%;
   top: 0;
-  left: 100;
+  left: 50;
   margin-left: -2px;
   margin-top: 175px;
   background-color: #fb6470;
@@ -1386,20 +1386,16 @@ a {
   -webkit-transition: all 3s ease 0s;
   -o-transition: all 3s ease 0s;
   transition: all 3s ease 0s;
-  border: none;
 }
 
-.button--home:focus {
-  outline: none;
+.button--home__name {
+  display: inline-block;
+  margin: 12px;
+  padding: 0;
 }
 
 .button--home .button__item {
   opacity: 0;
-}
-
-.button--home .button--home__name {
-  margin: 0;
-  padding: 0;
 }
 
 .button--active {
@@ -1420,12 +1416,10 @@ a {
   transition: all 2s ease 0s;
 }
 
-.button--active:focus {
-  outline: none;
-}
-
 .button--active .button--home__name {
   font-size: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .button__item {
@@ -2404,6 +2398,8 @@ a {
 
 @media (max-width: 768px) {
   .experience__wrapper {
+    width: 100%;
+    margin: 0;
     margin-top: 40px;
   }
 }
@@ -2555,6 +2551,8 @@ a {
 
 .info-title {
   position: relative;
+  max-width: 100%;
+  min-width: 100%;
   cursor: pointer;
 }
 

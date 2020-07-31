@@ -1,6 +1,7 @@
 .information-block{
 	position: relative;
 	box-sizing: border-box;
+	
 	margin-bottom: 20px;
 	padding: 20px;
 	color: white;
@@ -9,6 +10,8 @@
 }
 .info-title{
 	position: relative;
+	max-width: 100%;
+	min-width: 100%;
 	cursor: pointer;
 }
 .info-post{

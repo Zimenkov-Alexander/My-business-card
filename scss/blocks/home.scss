@@ -59,17 +59,14 @@
 	height: 55px;
 	font-size: 22px;
 	transition: all 3s ease 0s;
-	border: none;
-	&:focus{
-		outline:none;
-	}
+}
+.button--home__name{
+	display: inline-block;
+	margin: 12px;
+	padding: 0;
 }
 .button--home .button__item{
 	opacity: 0;
-}
-.button--home .button--home__name{
-	margin: 0;
-	padding: 0;
 }
 .button--active{
 	align-self: center;
@@ -80,12 +77,11 @@
 	border-radius: 10px;
 	background-color: rgba(255, 255, 255, 0.2);
 	transition: all 2s ease 0s;
-	&:focus{
-		outline:none;
-	}
 }
 .button--active .button--home__name{
 	font-size: 0;
+	margin: 0;
+	padding: 0;
 }
 .button__item{
 	width: 40px;
