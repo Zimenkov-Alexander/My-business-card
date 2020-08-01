@@ -1123,10 +1123,6 @@ a {
     display: inline;
     min-width: inherit;
   }
-  .page-header.active {
-    max-height: 0px;
-    min-height: 0px;
-  }
 }
 
 @media (max-width: 768px) {
