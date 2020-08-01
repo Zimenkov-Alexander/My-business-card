@@ -1678,7 +1678,7 @@ a {
     margin-right: 7%;
     border: 2px solid #1d1d24;
     border-radius: 10px;
-    background-image: url(../img/about-me/1.JPG);
+    background-image: url(../img/about-me/1.jpg);
     background-position: center;
     background-size: cover;
   }
@@ -2180,6 +2180,9 @@ a {
   }
   .form-message textarea:disabled {
     font-size: 18px;
+  }
+  .button--form {
+    margin-bottom: -30px;
   }
 }
 
