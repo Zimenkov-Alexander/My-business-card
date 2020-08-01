@@ -141,6 +141,9 @@ a {
   .heading-h2 {
     padding: 0;
   }
+  body.lock {
+    overflow: hidden;
+  }
 }
 
 @-webkit-keyframes home--scrolling {

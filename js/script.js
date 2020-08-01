@@ -3,7 +3,8 @@ let burgerMain = document.querySelector('.burger'),
 	mainNav = document.querySelector('.main-nav__wrapper');
 	pageExperienceWrapper = document.querySelector('.page-experience-wrapper'),
 	buttonHome = document.querySelector('.home__wrapper').querySelector('.button');
-	modalHome = document.querySelector('#modalHome');
+	modalHome = document.querySelector('#modalHome'),
+	body = document.querySelector('body');
 
 // Skills
 let skillsHtml = document.querySelector('.level-html'),
@@ -16,9 +17,17 @@ let skillsHtml = document.querySelector('.level-html'),
 	skillsGithub = document.querySelector('.level-github'),
 	skillsTesting = document.querySelector('.level-testing');
 
+
 burgerMain.addEventListener('click', function(){
 	burgerMain.classList.toggle("active");
 	pageHeader.classList.toggle("active");
+
+	if(burgerMain.classList.contains('active')){
+		body.classList.add('lock');
+	}else{
+		body.classList.remove('lock');
+	}
+
 }),500;
 
 buttonHome.addEventListener('mouseover', function(){
