@@ -2105,6 +2105,21 @@ a {
   padding: 10px;
 }
 
+.form-message textarea::-webkit-scrollbar {
+  width: 8px;
+}
+
+.form-message textarea::-webkit-scrollbar-track {
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.form-message textarea::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #fb6470;
+}
+
 #appointment-name {
   background-image: url("../img/form/name.svg");
 }
