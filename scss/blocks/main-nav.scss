@@ -6,6 +6,9 @@
 	top: 0;
 	left: 0;
 	background-color: #353541;
+
+	overflow-y: auto;
+	overflow-x: hidden;
 }
 
 .main-nav__description{
@@ -52,9 +55,15 @@
 
 
 @media (max-width: $tablet-width){
+	.page-header.active .main-nav__wrapper{
+		transform: translate(0px, -100%);
+		min-width: 0px; 
+	}
+
 	.main-nav__wrapper{
 		width: 100%;
 		z-index: 1;
+		transition: all 1.5s ease 0s;
 	}
 	
 	.main-nav__description{

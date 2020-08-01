@@ -22,7 +22,8 @@
 		min-width: inherit; 
 	}
 	.page-header.active{
-		display: none;
+		max-height: 0px;
+		min-height: 0px;
 	}
 }
 

@@ -1121,7 +1121,8 @@ a {
     min-width: inherit;
   }
   .page-header.active {
-    display: none;
+    max-height: 0px;
+    min-height: 0px;
   }
 }
 
@@ -1144,6 +1145,8 @@ a {
   top: 0;
   left: 0;
   background-color: #353541;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .main-nav__description {
@@ -1206,9 +1209,18 @@ a {
 }
 
 @media (max-width: 992px) {
+  .page-header.active .main-nav__wrapper {
+    -webkit-transform: translate(0px, -100%);
+    -ms-transform: translate(0px, -100%);
+    transform: translate(0px, -100%);
+    min-width: 0px;
+  }
   .main-nav__wrapper {
     width: 100%;
     z-index: 1;
+    -webkit-transition: all 1.5s ease 0s;
+    -o-transition: all 1.5s ease 0s;
+    transition: all 1.5s ease 0s;
   }
   .main-nav__description {
     padding-bottom: 40px;
