@@ -1,13 +1,15 @@
-<?
-if(isset($_POST['submit'])){
-    $to = "dmelinevskiy@gmail.com";
-    $from = $_POST['email'];
-    $name = $_POST['name'];
-    $subject = "This message is from ";
-    $message = $name . " wrote the following:" . "\n\n" . $_POST['message'];
-    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
-    $headers = "From:" . $from;
-    mail($to,$subject,$message,$headers);
-    echo "Mail Sent. Thank you " . $name . ", we will contact you shortly.";
+
+	<?php
+$to = "zimenkov@zimenkov.site";
+$subject = "My Business card";
+$body = "TEST";
+$headers = "MIME-Version: 1.0\r\n";
+$headers .= "Content-type:text/html;charset=UTF-8\r\n";
+$headers .= "From: You <ZimenkovIUAI@gmail.com>\r\n";
+
+if(mail($to,$subject,$body,$headers)) {
+echo "MAIL - OK";
+} else {
+echo "MAIL FAILED";
 }
-    ?>
+?>
