@@ -8,7 +8,7 @@ $(document).ready(function() {
 			url: "mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
-			alert("Thank you!");
+			console.log("Отправило");
 			setTimeout(function() {
 				// Done Functions
 				th.trigger("reset");
@@ -16,5 +16,4 @@ $(document).ready(function() {
 		});
 		return false;
 	});
-
 });
