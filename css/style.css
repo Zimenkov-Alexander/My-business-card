@@ -2392,6 +2392,41 @@ a {
   }
 }
 
+.modal-form {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  right: 0;
+  width: 250px;
+  height: 100px;
+  -webkit-transform: translate(-20%, -20%);
+  -ms-transform: translate(-20%, -20%);
+  transform: translate(-20%, -20%);
+  border-radius: 25px;
+  background-color: #353541;
+}
+
+.modal-form p {
+  color: white;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .modal-form {
+    width: 150px;
+    height: 70px;
+    -webkit-transform: translate(-5%, -50%);
+    -ms-transform: translate(-5%, -50%);
+    transform: translate(-5%, -50%);
+  }
+  .modal-form p {
+    font-size: 16px;
+    margin-top: 7px;
+  }
+}
+
 .experience__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;

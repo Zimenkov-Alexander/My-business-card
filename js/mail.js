@@ -8,8 +8,12 @@ $(document).ready(function() {
 			url: "mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
-			console.log("Отправило");
 			setTimeout(function() {
+				let formModal = document.querySelector('modal-form');
+				formModal.classList.remove('visually-hidden');
+				setTimeout(function(){
+					formModal.classList.add('visually-hidden');
+				},1500)
 				// Done Functions
 				th.trigger("reset");
 			}, 1000);
