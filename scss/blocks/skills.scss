@@ -78,10 +78,10 @@
 	animation-duration: 3.5s;
 	animation-timing-function: ease-in;
 }
-.skills__scss.slider__level::after{
-	width: $skills-scss;
+.skills__webpack.slider__level::after{
+	width: $skills-webpack;
 
-	animation-name: skills__scss;
+	animation-name: skills__webpack;
 	animation-duration: 3.5s;
 	animation-timing-function: ease-in;
 	
@@ -128,6 +128,32 @@
 	animation-duration: 3.5s;
 	animation-timing-function: ease-in;
 }
+.skills__bem.slider__level::after{
+	width: $skills-bem;
+
+	animation-name: skills__bem;
+	animation-duration: 3.5s;
+	animation-timing-function: ease-in;
+}
+.skills__figma.slider__level::after{
+	width: $skills-figma;
+
+	animation-name: skills__figma;
+	animation-duration: 3.5s;
+	animation-timing-function: ease-in;
+}
+.skills__jquery.slider__level::after{
+	width: $skills-jquery;
+
+	animation-name: skills__jquery;
+	animation-duration: 3.5s;
+	animation-timing-function: ease-in;
+}
+
+
+
+
+
 
 // Текст
 .skills__html .slider__percent::after{
@@ -144,10 +170,10 @@
 	animation-duration: 3.5s;
 	animation-timing-function: ease-in;
 }
-.skills__scss .slider__percent::after{
-	content: $skills-scss + "";
+.skills__webpack .slider__percent::after{
+	content: $skills-webpack + "";
 
-	animation-name: skills__scss--content;
+	animation-name: skills__webpack--content;
 	animation-duration: 3.5s;
 	animation-timing-function: ease-in;
 }
@@ -193,6 +219,27 @@
 	animation-duration: 3.5s;
 	animation-timing-function: ease-in;
 }
+.skills__bem .slider__percent::after{
+	content: $skills-bem + "";
+
+	animation-name: skills__bem--content;
+	animation-duration: 3.5s;
+	animation-timing-function: ease-in;
+}
+.skills__figma .slider__percent::after{
+	content: $skills-figma + "";
+
+	animation-name: skills__figma--content;
+	animation-duration: 3.5s;
+	animation-timing-function: ease-in;
+}
+.skills__jquery .slider__percent::after{
+	content: $skills-jquery + "";
+
+	animation-name: skills__jquery--content;
+	animation-duration: 3.5s;
+	animation-timing-function: ease-in;
+}
 
 
 @media (max-width: $tablet-width){
@@ -204,4 +251,11 @@
 	.skills__item__wrapper{
 		margin-top: 0px;
 	}
+}
+@media (max-width: 460px){
+	.skills__item{
+		width: 100%;
+		padding-bottom: 25px;
+	}
+	
 }

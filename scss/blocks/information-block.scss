@@ -38,6 +38,11 @@
 .info-wrapper{
 	display: none;
 }
+.info-description--line{
+	width: 100%;
+	min-height: 5px;
+	border-bottom: 1px dashed white;
+}
 
 .information-block::before{
 	position: absolute;
