@@ -49,11 +49,6 @@
 	margin-top: 30px;
 	width: 120px;
 }
-
-
-
-
-
 @media (max-width: $tablet-width){
 	.page-header.active .main-nav__wrapper{
 		transform: translate(0px, -100%);
@@ -96,7 +91,6 @@
 		margin-top: 35px;
 	}
 }
-
 @media (max-width: $mobile-width){
 	.main-nav__description{
 		display: flex;

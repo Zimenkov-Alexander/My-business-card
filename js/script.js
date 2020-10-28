@@ -1,3 +1,5 @@
+//TODO 1.Нужно переписать весь код на jQuery 2. Оптимизировать большенство функций 3. Разбить на модули 
+
 let burgerMain = document.querySelector('.burger'),
 	pageHeader = document.querySelector('.page-header'),
 	mainNav = document.querySelector('.main-nav__wrapper');
@@ -9,13 +11,16 @@ let burgerMain = document.querySelector('.burger'),
 // Skills
 let skillsHtml = document.querySelector('.level-html'),
 	skillsCss = document.querySelector('.level-css'),
-	skillsScss = document.querySelector('.level-scss'),
 	skillsJs = document.querySelector('.level-javascript'),
 	skillsReact = document.querySelector('.level-react'),
 	skillsPhotoshop = document.querySelector('.level-photoshop'),
 	skillsJira = document.querySelector('.level-jira'),
 	skillsGithub = document.querySelector('.level-github'),
-	skillsTesting = document.querySelector('.level-testing');
+	skillsTesting = document.querySelector('.level-testing'),
+	skillsWebpack = document.querySelector('.level-webpack'),
+	skillsJquery = document.querySelector('.level-jquery'),
+	skillsBem = document.querySelector('.level-bem'),
+	skillsFigma = document.querySelector('.level-figma');
 
 
 burgerMain.addEventListener('click', function(){
@@ -80,27 +85,34 @@ let Visible = function (target) {
     targetPosition.right > windowPosition.left && // Если позиция правой стороны элемента больше позиции левой части окна, то элемент виден слева
     targetPosition.left < windowPosition.right) { // Если позиция левой стороны элемента меньше позиции правой чайти окна, то элемент виден справа
 	// Если элемент полностью видно, то запускаем следующий код
+		
 	skillsHtml.classList.add('skills__html');
 	skillsCss.classList.add('skills__css');
-	skillsScss.classList.add('skills__scss');
 	skillsJs.classList.add('skills__javascript');
 	skillsReact.classList.add('skills__react');
 	skillsPhotoshop.classList.add('skills__photoshop');
 	skillsJira.classList.add('skills__jira');
 	skillsGithub.classList.add('skills__github');
 	skillsTesting.classList.add('skills__testing');
+	skillsWebpack.classList.add('skills__webpack');
+	skillsJquery.classList.add('skills__jquery');
+	skillsBem.classList.add('skills__bem');
+	skillsFigma.classList.add('skills__figma');
   } else {
 	// Если элемент не видно, то запускаем этот код
 	if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 		skillsHtml.classList.remove('skills__html');
 		skillsCss.classList.remove('skills__css');
-		skillsScss.classList.remove('skills__scss');
 		skillsJs.classList.remove('skills__javascript');
 		skillsReact.classList.remove('skills__react');
 		skillsPhotoshop.classList.remove('skills__photoshop');
 		skillsJira.classList.remove('skills__jira');
 		skillsGithub.classList.remove('skills__github');
 		skillsTesting.classList.remove('skills__testing');
+		skillsWebpack.classList.remove('skills__webpack');
+		skillsJquery.classList.remove('skills__jquery');
+		skillsBem.classList.remove('skills__bem');
+		skillsFigma.classList.remove('skills__figma');
 	  }						
 	}
 };
